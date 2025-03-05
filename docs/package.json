@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.3.0",
+    "nuxt": "^3.6.0"
+  },
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "docs app",
+  "main": "index.js",
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.13.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

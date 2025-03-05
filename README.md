@@ -1,84 +1,65 @@
-# Turborepo starter
+# 📌 Better UI
 
-This Turborepo starter is maintained by the Turborepo core team.
+<details>
+  <summary>📖 Explicación idea del proyecto</summary>
+  
+  - Este proyecto consiste en el desarrollo de una librería de componentes UI multiplataforma, diseñada para ser compatible con los frameworks más utilizados, como Vue, React, Angular, Svelte y Vanilla JavaScript. El objetivo es ofrecer una solución eficiente y versátil que permita a los desarrolladores integrar componentes consistentes, estilizados y accesibles en sus aplicaciones, independientemente de la tecnología que utilicen. A través de una arquitectura modular, herramientas de personalización y soporte para estándares modernos como Web Components, esta librería simplificará el proceso de desarrollo, promoviendo la reutilización de código y una experiencia de usuario consistente en diferentes entornos.
 
-## Using this example
+</details>
 
-Run the following command:
+<details>
+  <summary>🎯 Nuestros Objetivos</summary>
+  
+  - Desarrollar un conjunto de componentes de interfaz de usuario preconstruidos y altamente personalizables para acelerar el desarrollo de aplicaciones Nuxt.js o otros lenguajes y frameworks.
+  
+</details>
 
-```sh
-npx create-turbo@latest
-```
+<details>
+  <summary>🌐 Tecnologías Usadas</summary>
+  
+  - Lenguaje o framework principal (Docs): Nuxt.js   
+  - Otras herramientas: Tailwind y los diferentes frameworks para los que estará disponible el paquete. 
+  
+</details>
 
-## What's inside?
+<details>
+  <summary>📈 Diagramas</summary>
+  
+  Aquí puedes incluir imágenes o enlaces a los diagramas del proyecto (ERD, flujo de datos, arquitectura, etc.).
+  
+  ![Diagrama de clases](./public/class-diagram.png)
+  ![Diagrama de implementación](./public/class-diagram2.png)
+  
+</details>
 
-This Turborepo includes the following packages/apps:
+<details>
+  <summary>💻 Página Web</summary>
+  
+  - URL: [Enlace a la página](#)
+  
+</details>
 
-### Apps and Packages
+<details>
+  <summary>🎨 Paleta De Colores</summary>
+  
+  - Color Primario: `#4f46e5`
+  - Color Secundario: `#E45C22`
+  - Color Terciario: `#808EF9`
+  
+</details>
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+<details>
+  <summary>👀 Logo</summary>
+  
+  ![Logo](./public/logo.png)
+  
+</details>
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+<details>
+  <summary>🔗 Funcionalidades Web</summary>
+  
+  - ✅ Manual de instalación y uso de la libreria para los diferentes lenguajes
+  - ✅ Showcase de los diferentes componentes
+  
+</details>
+---

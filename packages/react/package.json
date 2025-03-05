@@ -1,0 +1,14 @@
+{
+  "name": "@better/react",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "bin": {
+    "better-ui": "./src/bin/better-ui.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "react": "^18.0.0"
+  }
+}
