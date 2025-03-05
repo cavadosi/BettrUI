@@ -1,0 +1,17 @@
+{
+  "date": "2025-03-05T18:47:38.462Z",
+  "preset": "nitro-dev",
+  "framework": {
+    "name": "nuxt",
+    "version": "3.15.4"
+  },
+  "versions": {
+    "nitro": "2.11.1"
+  },
+  "dev": {
+    "pid": 19460,
+    "workerAddress": {
+      "socketPath": "\\\\.\\pipe\\nitro\\C:\\Users\\jpequ\\Documents\\GitHub\\BetterUI\\docs\\.nuxt\\dev\\worker-19460-3-1684-3.sock"
+    }
+  }
+}
