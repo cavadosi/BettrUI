@@ -14,8 +14,8 @@ if (!fs.existsSync(projectPath)) {
 }
 
 if (command === "add" && componentName) {
-  const componentFile = path.join(componentsPath, `${componentName}.tsx`);
-  const targetFile = path.join(projectPath, `${componentName}.tsx`);
+  const componentFile = path.join(componentsPath, `${componentName}.vue`);
+  const targetFile = path.join(projectPath, `${componentName}.vue`);
 
   if (fs.existsSync(componentFile)) {
     fs.copyFileSync(componentFile, targetFile);
@@ -24,5 +24,5 @@ if (command === "add" && componentName) {
     console.error(`❌ The component ${componentName} doesn't exist.`);
   }
 } else {
-  console.log("Used: npx @better/react add <componente>");
+  console.log("Used: npx @better/vue add <componente>");
 }
