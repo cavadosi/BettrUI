@@ -1,8 +1,7 @@
-<!-- src/components/Button.vue -->
-
 <script setup lang="ts">
-import { computed, defineProps } from "vue";
+import { defineProps } from "vue";
 import { cva } from "class-variance-authority";
+import { twMerge } from "tailwind-merge";
 
 const ButtonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
@@ -39,18 +38,16 @@ const ButtonVariants = cva(
   }
 );
 
-const props = defineProps({
-  variant: { type: String, default: "solid" },
-  size: { type: String, default: "md" },
-  rounded: { type: String, default: "md" },
-  className: { type: String, default: "" },
-});
-
-
+const props = defineProps<{
+  variant?: "solid" | "link" | "outline" | "soft" | "ghost";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
+  rounded?: "none" | "sm" | "md" | "lg" | "xl" | "full";
+  class?: string;
+}>();
 </script>
 
 <template>
-  <button :class="ButtonVariants({ variant, size, rounded, className })">
+  <button :class="twMerge(ButtonVariants({ variant, size, rounded }), props.class)">
     <slot />
   </button>
 </template>

@@ -16,6 +16,9 @@ export default {
       control: { type: "select" },
       options: ["none", "sm", "md", "lg", "xl", "full"],
     },
+    class: {
+      control: {type: "text"}
+    }
   },
 };
 
@@ -24,7 +27,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<Button v-bind="args"{{ args.label }}</Button>',
+  template: '<Button v-bind="args">{{ args.label }}</Button>',
 });
 
 export const Default = Template.bind({});
@@ -33,4 +36,5 @@ Default.args = {
   variant: "solid",
   size: "md",
   rounded: "md",
+  class: ""
 };
