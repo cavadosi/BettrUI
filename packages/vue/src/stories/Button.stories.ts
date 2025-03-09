@@ -4,17 +4,33 @@ export default {
   title: "Components/Button",
   component: Button,
   argTypes: {
-    label: { control: "text" },
+    variant: {
+      control: { type: "select" },
+      options: ["solid", "link", "outline", "soft", "ghost"],
+    },
+    size: {
+      control: { type: "select" },
+      options: ["xs", "sm", "md", "lg", "xl"],
+    },
+    rounded: {
+      control: { type: "select" },
+      options: ["none", "sm", "md", "lg", "xl", "full"],
+    },
   },
 };
 
-const Template = (args: any) => ({
+const Template = (args) => ({
   components: { Button },
   setup() {
     return { args };
   },
-  template: '<Button v-bind="args" />',
+  template: '<Button v-bind="args"{{ args.label }}</Button>',
 });
 
-export const Primary = Template.bind({});
-Primary.args = { label: "Click Me" };
+export const Default = Template.bind({});
+Default.args = {
+  label: "Click Me",
+  variant: "solid",
+  size: "md",
+  rounded: "md",
+};
