@@ -17,6 +17,9 @@ export default {
       control: { type: "select" },
       options: ["none", "sm", "md", "lg", "xl", "full"],
     },
+    className: {
+      control: {type: "text"}
+    }
   },
 };
 
@@ -30,4 +33,5 @@ Default.args = {
   variant: "solid",
   size: "md",
   rounded: "md",
+  className: ""
 };

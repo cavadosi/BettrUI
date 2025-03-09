@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from "vue";
 import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
@@ -8,11 +7,11 @@ const ButtonVariants = cva(
   {
     variants: {
       variant: {
-        solid: "bg-indigo-600 text-white shadow hover:bg-indigo-500",
-        link: "text-indigo-600 underline-offset-4 hover:underline",
-        outline: "border border-indigo-600 text-indigo-600 hover:bg-indigo-100",
-        soft: "bg-indigo-100 text-indigo-600 hover:bg-indigo-200",
-        ghost: "text-indigo-600 hover:bg-indigo-100",
+        solid: "bg-primary-600 text-white shadow hover:bg-primary-500",
+        link: "text-primary-600 underline-offset-4 hover:underline",
+        outline: "border border-primary-600 text-primary-600 hover:bg-primary-100",
+        soft: "bg-primary-100 text-primary-600 hover:bg-primary-200",
+        ghost: "text-primary-600 hover:bg-primary-100",
       },
       size: {
         xs: "px-2 py-1 text-xs",

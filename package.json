@@ -9,13 +9,13 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "storybook": "^8.6.4",
-    "turbo": "^2.4.4",
-    "typescript": "5.8.2",
     "@tailwindcss/postcss": "^4.0.12",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.12"
+    "prettier": "^3.5.3",
+    "storybook": "^8.6.4",
+    "tailwindcss": "^4.0.12",
+    "turbo": "^2.4.4",
+    "typescript": "5.8.2"
   },
   "engines": {
     "node": ">=18"
@@ -24,5 +24,8 @@
   "workspaces": [
     "docs",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "chroma-js": "^3.1.2"
+  }
 }
