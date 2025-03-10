@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
+import { twMerge } from "tailwind-merge";
 
-// Define button variants and sizes using cva
 const ButtonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
   {
@@ -9,7 +9,8 @@ const ButtonVariants = cva(
       variant: {
         solid: "bg-primary-600 text-white shadow hover:bg-primary-500",
         link: "text-primary-600 underline-offset-4 hover:underline",
-        outline: "border border-primary-600 text-primary-600 hover:bg-primary-100",
+        outline:
+          "border border-primary-600 text-primary-600 hover:bg-primary-100",
         soft: "bg-primary-100 text-primary-600 hover:bg-primary-200",
         ghost: "text-primary-600 hover:bg-primary-100",
       },
@@ -27,13 +28,14 @@ const ButtonVariants = cva(
         lg: "rounded-lg",
         xl: "rounded-xl",
         full: "rounded-full",
-      }
+      },
     },
     defaultVariants: {
       variant: "solid",
       size: "md",
+      rounded: "md",
     },
-  }
+  },
 );
 
 export interface ButtonProps
@@ -44,12 +46,15 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, rounded, ...props }, ref) => {
     return (
       <button
-        className={ButtonVariants({ variant, size, rounded, className })}
+        className={twMerge(
+          ButtonVariants({ variant, size, rounded }),
+          className,
+        )}
         ref={ref}
         {...props}
       />
     );
-  }
+  },
 );
 
 Button.displayName = "Button";
