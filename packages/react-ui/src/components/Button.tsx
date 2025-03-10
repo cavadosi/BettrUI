@@ -7,12 +7,16 @@ const ButtonVariants = cva(
   {
     variants: {
       variant: {
-        solid: "bg-primary-600 text-white shadow hover:bg-primary-500",
-        link: "text-primary-600 underline-offset-4 hover:underline",
+        solid:
+          "bg-primary-600 text-white shadow hover:bg-primary-500 dark:bg-primary-400 dark:hover:bg-primary-300",
+        link: "text-primary-600 underline-offset-4 hover:underline dark:text-primary-400",
         outline:
-          "border border-primary-600 text-primary-600 hover:bg-primary-100",
-        soft: "bg-primary-100 text-primary-600 hover:bg-primary-200",
-        ghost: "text-primary-600 hover:bg-primary-100",
+          "border border-primary-600 text-primary-600 hover:bg-primary-100 dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-300/20",
+        soft: "bg-primary-100 text-primary-600 hover:bg-primary-200 dark:bg-primary-800 dark:text-primary-300 dark:hover:bg-primary-700",
+        ghost:
+          "text-primary-600 hover:bg-primary-100 dark:text-primary-400 dark:hover:bg-primary-800/20",
+        secondary:
+          "bg-white text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-gray-50 dark:bg-white/10 dark:text-white dark:hover:bg-white/20",
       },
       size: {
         xs: "px-2 py-1 text-xs",

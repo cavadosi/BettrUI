@@ -7,7 +7,7 @@ export default {
   argTypes: {
     variant: {
       control: { type: "select" },
-      options: ["solid", "link", "outline", "soft", "ghost"],
+      options: ["solid", "link", "outline", "soft", "ghost", "secondary"],
     },
     size: {
       control: { type: "select" },
