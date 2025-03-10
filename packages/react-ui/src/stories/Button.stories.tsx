@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../components/Button";
 
 export default {
-  title: "Components/Button",
+  title: "React/Button",
   component: Button,
   argTypes: {
     variant: {
@@ -17,9 +17,6 @@ export default {
       control: { type: "select" },
       options: ["none", "sm", "md", "lg", "xl", "full"],
     },
-    className: {
-      control: {type: "text"}
-    }
   },
 };
 
@@ -33,5 +30,4 @@ Default.args = {
   variant: "solid",
   size: "md",
   rounded: "md",
-  className: ""
 };
