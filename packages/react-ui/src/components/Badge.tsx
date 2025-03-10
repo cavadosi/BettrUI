@@ -9,6 +9,8 @@ const BadgeVariants = cva(
       variant: {
         primary:
           "bg-primary-50 text-primary-600 ring-primary-500/10 dark:bg-primary-400/10 dark:text-primary-400 dark:ring-primary-400/20",
+        secondary:
+          "bg-secondary-50 text-secondary-600 ring-secondary-500/10 dark:bg-secondary-400/10 dark:text-secondary-400 dark:ring-secondary-400/20",
         gray: "bg-gray-50 text-gray-600 ring-gray-500/10 dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/20",
         red: "bg-red-50 text-red-700 ring-red-600/10 dark:bg-red-400/10 dark:text-red-400 dark:ring-red-400/20",
         yellow:

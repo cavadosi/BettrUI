@@ -9,6 +9,7 @@ export default {
       control: { type: "select" },
       options: [
         "primary",
+        "secondary",
         "gray",
         "red",
         "yellow",

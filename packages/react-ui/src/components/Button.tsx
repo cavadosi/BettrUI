@@ -12,11 +12,11 @@ const ButtonVariants = cva(
         link: "text-primary-600 underline-offset-4 hover:underline dark:text-primary-400",
         outline:
           "border border-primary-600 text-primary-600 hover:bg-primary-100 dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-300/20",
-        soft: "bg-primary-100 text-primary-600 hover:bg-primary-200 dark:bg-primary-800 dark:text-primary-300 dark:hover:bg-primary-700",
+        soft: "bg-primary-50 text-primary-600 hover:bg-primary-100",
         ghost:
-          "text-primary-600 hover:bg-primary-100 dark:text-primary-400 dark:hover:bg-primary-800/20",
+          "text-primary-600 hover:bg-primary-50",
         secondary:
-          "bg-white ring-gray-300 ring-inset hover:bg-gray-50 text-gray-900 ring-1 text-xs font-semibold shadow-xs dark:ring-0 dark:text-white dark:bg-white/10  dark:hover:bg-white/20",
+          "bg-white ring-secondary-300 ring-inset hover:bg-secondary-50 text-secondary-900 ring-1 text-xs font-semibold shadow-xs dark:ring-0 dark:text-white dark:bg-white/10  dark:hover:bg-white/20",
       },
       size: {
         xs: "px-2 py-1 text-xs",
