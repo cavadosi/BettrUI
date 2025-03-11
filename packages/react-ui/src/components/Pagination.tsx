@@ -24,7 +24,7 @@ function getPaginationItems(
     return items;
   }
 
-  max = Math.max(5, max)
+  max = Math.max(5, Math.floor(max / 2)*2 -1)
   
   // If the current page is near the beginning, show the first pages dynamically based on max, and ellipses at the end
   if (currentPage <= Math.floor(max / 2)) {

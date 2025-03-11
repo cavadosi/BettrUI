@@ -30,5 +30,5 @@ export const Default = DefaultTemplate.bind({});
 Default.args = {
   totalPages: 10,
   currentPage: 1,
-  max: 11,
+  max: 5,
 };
