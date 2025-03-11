@@ -1,12 +1,12 @@
 import Button from "../components/Button.vue";
 
 export default {
-  title: "Components/Button",
+  title: "Vue/Button",
   component: Button,
   argTypes: {
     variant: {
       control: { type: "select" },
-      options: ["solid", "link", "outline", "soft", "ghost"],
+      options: ["solid", "link", "outline", "soft", "ghost", "secondary"],
     },
     size: {
       control: { type: "select" },
@@ -16,9 +16,6 @@ export default {
       control: { type: "select" },
       options: ["none", "sm", "md", "lg", "xl", "full"],
     },
-    class: {
-      control: {type: "text"}
-    }
   },
 };
 
@@ -36,5 +33,4 @@ Default.args = {
   variant: "solid",
   size: "md",
   rounded: "md",
-  class: ""
 };
