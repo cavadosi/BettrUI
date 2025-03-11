@@ -1,14 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary-100: #e5f3ff;
-    --color-primary-200: #b8dbf8;
-    --color-primary-300: #8abcf1;
-    --color-primary-400: #5c9ef9;
-    --color-primary-500: #3498db;
-    --color-primary-600: #1e78b9;
-    --color-primary-700: #155f8f;
-    --color-primary-800: #0d4675;
-    --color-primary-900: #073254;
-}
+  --color-primary-50: oklch(0.962 0.018 272.4);
+  --color-primary-100: oklch(0.884 0.056 274.2);
+  --color-primary-200: oklch(0.809 0.096 274.9);
+  --color-primary-300: oklch(0.732 0.14 276.1);
+  --color-primary-400: oklch(0.657 0.184 276.7);
+  --color-primary-500: oklch(0.582 0.232 277.2);
+  --color-primary-600: oklch(0.516 0.203 277.8);
+  --color-primary-700: oklch(0.451 0.175 278.3);
+  --color-primary-800: oklch(0.387 0.146 279.1);
+  --color-primary-900: oklch(0.322 0.118 279.4);
+  --color-primary-950: oklch(0.256 0.091 280.5);
 
+  --color-secondary-50: oklch(0.963 0.003 247.8);
+  --color-secondary-100: oklch(0.88 0.013 255.5);
+  --color-secondary-200: oklch(0.799 0.021 257.5);
+  --color-secondary-300: oklch(0.717 0.029 255.1);
+  --color-secondary-400: oklch(0.636 0.037 257.9);
+  --color-secondary-500: oklch(0.554 0.046 257.5);
+  --color-secondary-600: oklch(0.496 0.04 257.9);
+  --color-secondary-700: oklch(0.436 0.035 259.5);
+  --color-secondary-800: oklch(0.376 0.029 258.4);
+  --color-secondary-900: oklch(0.316 0.024 261.2);
+  --color-secondary-950: oklch(0.258 0.017 255.7);
+}

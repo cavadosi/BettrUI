@@ -8,7 +8,7 @@ const preview = {
         { name: 'Dark', value: '#101828' },
         { name: 'Light', value: '#F7F9F2' },
       ],
-      default: 'Light',
+      default: 'Dark',
     },
     controls: {
       matchers: {
