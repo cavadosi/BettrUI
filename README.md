@@ -24,9 +24,7 @@
 
 <details>
   <summary>📈 Diagramas</summary>
-  
-  Aquí puedes incluir imágenes o enlaces a los diagramas del proyecto (ERD, flujo de datos, arquitectura, etc.).
-  
+    
   ![Diagrama de clases](./public/class-diagram.png)
   ![Diagrama de implementación](./public/class-diagram2.png)
   
