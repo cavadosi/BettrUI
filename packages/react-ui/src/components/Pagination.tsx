@@ -27,11 +27,8 @@ function usePagination(
     return items;
   }
 
-  console.log("1", max);
-  console.log("1.5", Math.floor(max / 2) * 2 - 1);
-  // max = max > 5 && max % 2 === 0 ? Math.floor(max / 2) * 2 - 1 : max;
   max = Math.max(5, max % 2 === 0 ? Math.floor(max / 2) * 2 - 1 : max);
-  console.log("2", max);
+
   // If the current page is near the beginning, show the first pages dynamically based on max, and ellipses at the end
   if (currentPage <= Math.floor(max / 2)) {
     const firstPages = Array.from(
