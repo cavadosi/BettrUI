@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 // Variants for the Card component
 const CardVariants = cva(
-  "divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm",
+  "divide-y divide-secondary-200 overflow-hidden rounded-lg bg-secondary-50 shadow-sm",
   {
     variants: {
       rounded: {
@@ -15,6 +15,9 @@ const CardVariants = cva(
         xl: "rounded-xl",
       },
     },
+    defaultVariants: {
+        rounded: "md"
+    }
   },
 );
 
@@ -85,7 +88,6 @@ const Card: React.FC<CardProps> & {
   children,
   ...props
 }) => {
-    // console.log(children.props.children);
     
   return (
     <div className={twMerge(CardVariants({ rounded }), className)} {...props}>
