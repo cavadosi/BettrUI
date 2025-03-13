@@ -8,7 +8,7 @@ const ButtonVariants = cva(
     variants: {
       variant: {
         solid:
-          "bg-primary-600 text-white shadow hover:bg-primary-500 dark:bg-primary-400 dark:hover:bg-primary-300",
+          "bg-primary-600 text-white shadow hover:bg-primary-500 dark:bg-primary-500 dark:hover:bg-primary-400",
         link: "text-primary-600 underline-offset-4 hover:underline dark:text-primary-400",
         outline:
           "border border-primary-600 text-primary-600 hover:bg-primary-100 dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-300/20",
