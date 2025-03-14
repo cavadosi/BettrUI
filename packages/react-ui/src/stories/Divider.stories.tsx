@@ -1,6 +1,6 @@
 import React from "react";
 import { Divider } from "../components/Divider";
-import Icon from "../components/Icon";
+import {Icon} from "../components/Icon";
 
 export default {
   title: "React/Divider",

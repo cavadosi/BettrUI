@@ -19,4 +19,4 @@ const Icon: React.FC<IconProps> = ({ name, variant = 'outline', className, ...pr
   return <IconComponent {...props} className={className} />;
 };
 
-export default Icon;
+export { Icon };
