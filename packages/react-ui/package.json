@@ -9,6 +9,7 @@
     ".": "./src/index.ts"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "class-variance-authority": "^0.7.1",
     "react": "^18.0.0",
