@@ -138,7 +138,7 @@ WithOffset.args = {
   placement: "right-start",
   offset: 10,
   className: "px-20 pt-10",
-  buttonVariant: "soft", // Custom variant
-  buttonSize: "xs", // Custom size
-  buttonRounded: "none", // Custom rounded
+  buttonVariant: "soft",
+  buttonSize: "xs", 
+  buttonRounded: "none", 
 };
