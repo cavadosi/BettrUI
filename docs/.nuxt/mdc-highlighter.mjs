@@ -199,6 +199,10 @@ const bundledLangs = {
 "mdc": () => import('shiki/langs/mdc.mjs'),
 "yaml": () => import('shiki/langs/yaml.mjs'),
 "yml": () => import('shiki/langs/yaml.mjs'),
+"diff": () => import('shiki/langs/diff.mjs'),
+"ini": () => import('shiki/langs/ini.mjs'),
+"properties": () => import('shiki/langs/ini.mjs'),
+"dotenv": () => import('shiki/langs/dotenv.mjs'),
 }
 const bundledThemes = {
 "github-light": () => import('shiki/themes/github-light.mjs').then(r => r.default),

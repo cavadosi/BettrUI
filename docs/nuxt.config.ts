@@ -1,10 +1,6 @@
-// https://nuxt.com/docs/guide/directory-structure/nuxt.config#nuxt-config-file
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
-
-  content: {
-    documentDriven: true
-  },
-
-  compatibilityDate: '2025-01-13'
-})
+  devtools: { enabled: true },
+  extends: ['shadcn-docs-nuxt'],
+  compatibilityDate: '2024-07-06',
+});

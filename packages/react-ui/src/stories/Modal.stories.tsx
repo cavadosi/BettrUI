@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Modal } from "../components/Modal";
-import { Card } from "../components/Card";
 import { Button } from "../components/Button";
 
 export default {
