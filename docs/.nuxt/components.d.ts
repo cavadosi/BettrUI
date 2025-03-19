@@ -132,17 +132,33 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
     'NuxtImg': typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']
     'NuxtPicture': typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']
+    'UiAccordion': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']
+    'UiAccordionContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']
+    'UiAccordionItem': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']
+    'UiAccordionTrigger': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']
+    'UiBadge': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']
+    'UiAvatar': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']
+    'UiAvatarFallback': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']
+    'UiAvatarImage': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']
+    'UiButton': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']
     'UiBreadcrumb': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['Breadcrumb']
     'UiBreadcrumbItem': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbItem']
     'UiBreadcrumbLink': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbLink']
     'UiBreadcrumbList': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbList']
     'UiBreadcrumbPage': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbPage']
     'UiBreadcrumbSeparator': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbSeparator']
-    'UiButton': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']
-    'UiBadge': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']
+    'UiCard': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']
+    'UiCardContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']
+    'UiCardDescription': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']
+    'UiCardFooter': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']
+    'UiCardHeader': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']
+    'UiCardTitle': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']
     'UiCollapsible': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['Collapsible']
     'UiCollapsibleContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleContent']
     'UiCollapsibleTrigger': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleTrigger']
+    'UiAlert': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']
+    'UiAlertDescription': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']
+    'UiAlertTitle': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']
     'UiCommand': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['Command']
     'UiCommandEmpty': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandEmpty']
     'UiCommandGroup': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandGroup']
@@ -150,6 +166,10 @@ interface _GlobalComponents {
     'UiCommandItem': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandItem']
     'UiCommandList': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandList']
     'UiCommandSeparator': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandSeparator']
+    'UiPopover': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']
+    'UiPopoverContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']
+    'UiPopoverTrigger': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']
+    'UiPopoverAnchor': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']
     'UiDialog': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['Dialog']
     'UiDialogClose': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogClose']
     'UiDialogContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogContent']
@@ -159,14 +179,7 @@ interface _GlobalComponents {
     'UiDialogScrollContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogScrollContent']
     'UiDialogTitle': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTitle']
     'UiDialogTrigger': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTrigger']
-    'UiAlert': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']
-    'UiAlertDescription': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']
-    'UiAlertTitle': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']
     'UiLabel': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/label/index")['Label']
-    'UiPopover': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']
-    'UiPopoverContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']
-    'UiPopoverTrigger': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']
-    'UiPopoverAnchor': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']
     'UiScrollArea': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollArea']
     'UiScrollBar': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollBar']
     'UiNavigationMenu': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/navigation-menu/index")['NavigationMenu']
@@ -196,19 +209,6 @@ interface _GlobalComponents {
     'UiToastProvider': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastProvider']
     'UiToastTitle': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastTitle']
     'UiToastViewport': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastViewport']
-    'UiCard': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']
-    'UiCardContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']
-    'UiCardDescription': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']
-    'UiCardFooter': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']
-    'UiCardHeader': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']
-    'UiCardTitle': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']
-    'UiAccordion': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']
-    'UiAccordionContent': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']
-    'UiAccordionItem': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']
-    'UiAccordionTrigger': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']
-    'UiAvatar': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']
-    'UiAvatarFallback': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']
-    'UiAvatarImage': typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']
     'MDC': typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC.vue")['default']
     'MDCRenderer': typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCRenderer.vue")['default']
     'MDCSlot': typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot.vue")['default']
@@ -348,17 +348,33 @@ interface _GlobalComponents {
     'LazyNuxtRouteAnnouncer': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']>
     'LazyNuxtImg': LazyComponent<typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']>
     'LazyNuxtPicture': LazyComponent<typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']>
+    'LazyUiAccordion': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']>
+    'LazyUiAccordionContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']>
+    'LazyUiAccordionItem': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']>
+    'LazyUiAccordionTrigger': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']>
+    'LazyUiBadge': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']>
+    'LazyUiAvatar': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']>
+    'LazyUiAvatarFallback': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']>
+    'LazyUiAvatarImage': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']>
+    'LazyUiButton': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']>
     'LazyUiBreadcrumb': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['Breadcrumb']>
     'LazyUiBreadcrumbItem': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbItem']>
     'LazyUiBreadcrumbLink': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbLink']>
     'LazyUiBreadcrumbList': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbList']>
     'LazyUiBreadcrumbPage': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbPage']>
     'LazyUiBreadcrumbSeparator': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbSeparator']>
-    'LazyUiButton': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']>
-    'LazyUiBadge': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']>
+    'LazyUiCard': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']>
+    'LazyUiCardContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']>
+    'LazyUiCardDescription': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']>
+    'LazyUiCardFooter': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']>
+    'LazyUiCardHeader': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']>
+    'LazyUiCardTitle': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']>
     'LazyUiCollapsible': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['Collapsible']>
     'LazyUiCollapsibleContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleContent']>
     'LazyUiCollapsibleTrigger': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleTrigger']>
+    'LazyUiAlert': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']>
+    'LazyUiAlertDescription': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']>
+    'LazyUiAlertTitle': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']>
     'LazyUiCommand': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['Command']>
     'LazyUiCommandEmpty': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandEmpty']>
     'LazyUiCommandGroup': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandGroup']>
@@ -366,6 +382,10 @@ interface _GlobalComponents {
     'LazyUiCommandItem': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandItem']>
     'LazyUiCommandList': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandList']>
     'LazyUiCommandSeparator': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandSeparator']>
+    'LazyUiPopover': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']>
+    'LazyUiPopoverContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']>
+    'LazyUiPopoverTrigger': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']>
+    'LazyUiPopoverAnchor': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']>
     'LazyUiDialog': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['Dialog']>
     'LazyUiDialogClose': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogClose']>
     'LazyUiDialogContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogContent']>
@@ -375,14 +395,7 @@ interface _GlobalComponents {
     'LazyUiDialogScrollContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogScrollContent']>
     'LazyUiDialogTitle': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTitle']>
     'LazyUiDialogTrigger': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTrigger']>
-    'LazyUiAlert': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']>
-    'LazyUiAlertDescription': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']>
-    'LazyUiAlertTitle': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']>
     'LazyUiLabel': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/label/index")['Label']>
-    'LazyUiPopover': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']>
-    'LazyUiPopoverContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']>
-    'LazyUiPopoverTrigger': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']>
-    'LazyUiPopoverAnchor': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']>
     'LazyUiScrollArea': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollArea']>
     'LazyUiScrollBar': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollBar']>
     'LazyUiNavigationMenu': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/navigation-menu/index")['NavigationMenu']>
@@ -412,19 +425,6 @@ interface _GlobalComponents {
     'LazyUiToastProvider': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastProvider']>
     'LazyUiToastTitle': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastTitle']>
     'LazyUiToastViewport': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastViewport']>
-    'LazyUiCard': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']>
-    'LazyUiCardContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']>
-    'LazyUiCardDescription': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']>
-    'LazyUiCardFooter': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']>
-    'LazyUiCardHeader': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']>
-    'LazyUiCardTitle': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']>
-    'LazyUiAccordion': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']>
-    'LazyUiAccordionContent': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']>
-    'LazyUiAccordionItem': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']>
-    'LazyUiAccordionTrigger': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']>
-    'LazyUiAvatar': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']>
-    'LazyUiAvatarFallback': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']>
-    'LazyUiAvatarImage': LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']>
     'LazyMDC': LazyComponent<typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC.vue")['default']>
     'LazyMDCRenderer': LazyComponent<typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCRenderer.vue")['default']>
     'LazyMDCSlot': LazyComponent<typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot.vue")['default']>
@@ -570,17 +570,33 @@ export const NuxtLoadingIndicator: typeof import("../node_modules/nuxt/dist/app/
 export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
 export const NuxtImg: typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']
 export const NuxtPicture: typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']
+export const UiAccordion: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']
+export const UiAccordionContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']
+export const UiAccordionItem: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']
+export const UiAccordionTrigger: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']
+export const UiBadge: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']
+export const UiAvatar: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']
+export const UiAvatarFallback: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']
+export const UiAvatarImage: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']
+export const UiButton: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']
 export const UiBreadcrumb: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['Breadcrumb']
 export const UiBreadcrumbItem: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbItem']
 export const UiBreadcrumbLink: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbLink']
 export const UiBreadcrumbList: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbList']
 export const UiBreadcrumbPage: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbPage']
 export const UiBreadcrumbSeparator: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbSeparator']
-export const UiButton: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']
-export const UiBadge: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']
+export const UiCard: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']
+export const UiCardContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']
+export const UiCardDescription: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']
+export const UiCardFooter: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']
+export const UiCardHeader: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']
+export const UiCardTitle: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']
 export const UiCollapsible: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['Collapsible']
 export const UiCollapsibleContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleContent']
 export const UiCollapsibleTrigger: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleTrigger']
+export const UiAlert: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']
+export const UiAlertDescription: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']
+export const UiAlertTitle: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']
 export const UiCommand: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['Command']
 export const UiCommandEmpty: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandEmpty']
 export const UiCommandGroup: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandGroup']
@@ -588,6 +604,10 @@ export const UiCommandInput: typeof import("../node_modules/shadcn-docs-nuxt/com
 export const UiCommandItem: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandItem']
 export const UiCommandList: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandList']
 export const UiCommandSeparator: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandSeparator']
+export const UiPopover: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']
+export const UiPopoverContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']
+export const UiPopoverTrigger: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']
+export const UiPopoverAnchor: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']
 export const UiDialog: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['Dialog']
 export const UiDialogClose: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogClose']
 export const UiDialogContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogContent']
@@ -597,14 +617,7 @@ export const UiDialogHeader: typeof import("../node_modules/shadcn-docs-nuxt/com
 export const UiDialogScrollContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogScrollContent']
 export const UiDialogTitle: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTitle']
 export const UiDialogTrigger: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTrigger']
-export const UiAlert: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']
-export const UiAlertDescription: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']
-export const UiAlertTitle: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']
 export const UiLabel: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/label/index")['Label']
-export const UiPopover: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']
-export const UiPopoverContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']
-export const UiPopoverTrigger: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']
-export const UiPopoverAnchor: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']
 export const UiScrollArea: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollArea']
 export const UiScrollBar: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollBar']
 export const UiNavigationMenu: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/navigation-menu/index")['NavigationMenu']
@@ -634,19 +647,6 @@ export const UiToaster: typeof import("../node_modules/shadcn-docs-nuxt/componen
 export const UiToastProvider: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastProvider']
 export const UiToastTitle: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastTitle']
 export const UiToastViewport: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastViewport']
-export const UiCard: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']
-export const UiCardContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']
-export const UiCardDescription: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']
-export const UiCardFooter: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']
-export const UiCardHeader: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']
-export const UiCardTitle: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']
-export const UiAccordion: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']
-export const UiAccordionContent: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']
-export const UiAccordionItem: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']
-export const UiAccordionTrigger: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']
-export const UiAvatar: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']
-export const UiAvatarFallback: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']
-export const UiAvatarImage: typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']
 export const MDC: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC.vue")['default']
 export const MDCRenderer: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCRenderer.vue")['default']
 export const MDCSlot: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot.vue")['default']
@@ -786,17 +786,33 @@ export const LazyNuxtLoadingIndicator: LazyComponent<typeof import("../node_modu
 export const LazyNuxtRouteAnnouncer: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']>
 export const LazyNuxtImg: LazyComponent<typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue")['default']>
 export const LazyNuxtPicture: LazyComponent<typeof import("../node_modules/@nuxt/image/dist/runtime/components/NuxtPicture.vue")['default']>
+export const LazyUiAccordion: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']>
+export const LazyUiAccordionContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']>
+export const LazyUiAccordionItem: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']>
+export const LazyUiAccordionTrigger: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']>
+export const LazyUiBadge: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']>
+export const LazyUiAvatar: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']>
+export const LazyUiAvatarFallback: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']>
+export const LazyUiAvatarImage: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']>
+export const LazyUiButton: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']>
 export const LazyUiBreadcrumb: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['Breadcrumb']>
 export const LazyUiBreadcrumbItem: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbItem']>
 export const LazyUiBreadcrumbLink: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbLink']>
 export const LazyUiBreadcrumbList: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbList']>
 export const LazyUiBreadcrumbPage: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbPage']>
 export const LazyUiBreadcrumbSeparator: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/breadcrumb/index")['BreadcrumbSeparator']>
-export const LazyUiButton: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/button/index")['Button']>
-export const LazyUiBadge: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/badge/index")['Badge']>
+export const LazyUiCard: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']>
+export const LazyUiCardContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']>
+export const LazyUiCardDescription: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']>
+export const LazyUiCardFooter: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']>
+export const LazyUiCardHeader: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']>
+export const LazyUiCardTitle: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']>
 export const LazyUiCollapsible: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['Collapsible']>
 export const LazyUiCollapsibleContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleContent']>
 export const LazyUiCollapsibleTrigger: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/collapsible/index")['CollapsibleTrigger']>
+export const LazyUiAlert: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']>
+export const LazyUiAlertDescription: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']>
+export const LazyUiAlertTitle: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']>
 export const LazyUiCommand: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['Command']>
 export const LazyUiCommandEmpty: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandEmpty']>
 export const LazyUiCommandGroup: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandGroup']>
@@ -804,6 +820,10 @@ export const LazyUiCommandInput: LazyComponent<typeof import("../node_modules/sh
 export const LazyUiCommandItem: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandItem']>
 export const LazyUiCommandList: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandList']>
 export const LazyUiCommandSeparator: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/command/index")['CommandSeparator']>
+export const LazyUiPopover: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']>
+export const LazyUiPopoverContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']>
+export const LazyUiPopoverTrigger: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']>
+export const LazyUiPopoverAnchor: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']>
 export const LazyUiDialog: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['Dialog']>
 export const LazyUiDialogClose: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogClose']>
 export const LazyUiDialogContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogContent']>
@@ -813,14 +833,7 @@ export const LazyUiDialogHeader: LazyComponent<typeof import("../node_modules/sh
 export const LazyUiDialogScrollContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogScrollContent']>
 export const LazyUiDialogTitle: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTitle']>
 export const LazyUiDialogTrigger: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/dialog/index")['DialogTrigger']>
-export const LazyUiAlert: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['Alert']>
-export const LazyUiAlertDescription: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertDescription']>
-export const LazyUiAlertTitle: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/alert/index")['AlertTitle']>
 export const LazyUiLabel: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/label/index")['Label']>
-export const LazyUiPopover: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['Popover']>
-export const LazyUiPopoverContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverContent']>
-export const LazyUiPopoverTrigger: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverTrigger']>
-export const LazyUiPopoverAnchor: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/popover/index")['PopoverAnchor']>
 export const LazyUiScrollArea: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollArea']>
 export const LazyUiScrollBar: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/scroll-area/index")['ScrollBar']>
 export const LazyUiNavigationMenu: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/navigation-menu/index")['NavigationMenu']>
@@ -850,19 +863,6 @@ export const LazyUiToaster: LazyComponent<typeof import("../node_modules/shadcn-
 export const LazyUiToastProvider: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastProvider']>
 export const LazyUiToastTitle: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastTitle']>
 export const LazyUiToastViewport: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/toast/index")['ToastViewport']>
-export const LazyUiCard: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['Card']>
-export const LazyUiCardContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardContent']>
-export const LazyUiCardDescription: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardDescription']>
-export const LazyUiCardFooter: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardFooter']>
-export const LazyUiCardHeader: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardHeader']>
-export const LazyUiCardTitle: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/card/index")['CardTitle']>
-export const LazyUiAccordion: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['Accordion']>
-export const LazyUiAccordionContent: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionContent']>
-export const LazyUiAccordionItem: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionItem']>
-export const LazyUiAccordionTrigger: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/accordion/index")['AccordionTrigger']>
-export const LazyUiAvatar: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['Avatar']>
-export const LazyUiAvatarFallback: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarFallback']>
-export const LazyUiAvatarImage: LazyComponent<typeof import("../node_modules/shadcn-docs-nuxt/components/ui/avatar/index")['AvatarImage']>
 export const LazyMDC: LazyComponent<typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC.vue")['default']>
 export const LazyMDCRenderer: LazyComponent<typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCRenderer.vue")['default']>
 export const LazyMDCSlot: LazyComponent<typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDCSlot.vue")['default']>

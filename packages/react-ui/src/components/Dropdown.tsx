@@ -5,7 +5,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { Icon } from "./Icon";
 import { twMerge } from "tailwind-merge";
 import { usePopper } from "react-popper";
-import { Button } from "./Button"; // Import the Button component
+import { Button } from "./Button";
 import type { Placement } from "@popperjs/core";
 
 interface DropdownItem {

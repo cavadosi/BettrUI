@@ -48,7 +48,7 @@
         "../node_modules/vite/client"
       ],
       "@/lib/utils": [
-        "./shadcn-nuxt/utils.ts"
+        "./shadcn-nuxt/utils"
       ],
       "~": [
         ".."
@@ -99,13 +99,13 @@
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#mdc-configs": [
-        "./mdc-configs.mjs"
+        "./mdc-configs"
       ],
       "#mdc-highlighter": [
-        "./mdc-highlighter.mjs"
+        "./mdc-highlighter"
       ],
       "#mdc-imports": [
-        "./mdc-imports.mjs"
+        "./mdc-imports"
       ],
       "#image": [
         "../node_modules/@nuxt/image/dist/runtime"
@@ -153,7 +153,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev.json"
+        "./manifest/meta/dev"
       ],
       "#components": [
         "./components"
