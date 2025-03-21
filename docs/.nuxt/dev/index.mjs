@@ -434,15 +434,47 @@ const appConfig0 = defineAppConfig({
         light: "/logo.png",
         dark: "/logo.png"
       },
-      nav: [],
-      links: [{
-        icon: "lucide:github",
-        to: "https://github.com/cavadosi/BetterUI",
-        target: "_blank"
-      }]
+      nav: [
+        {
+          title: "Docs",
+          links: [
+            {
+              icon: "solar:info-circle-linear",
+              title: "Introduction",
+              description: "Install and configure the component library",
+              to: "/introduction",
+              target: "_self",
+              showLinkIcon: true
+            },
+            {
+              icon: "ic:outline-file-download",
+              title: "Instalation",
+              description: "Install and configure the component library",
+              to: "/instalation",
+              target: "_self",
+              showLinkIcon: true
+            },
+            {
+              icon: "iconoir:cube",
+              title: "Components",
+              description: "Install and configure the component library",
+              to: "/components/button",
+              target: "_self",
+              showLinkIcon: true
+            }
+          ]
+        }
+      ],
+      links: [
+        {
+          icon: "lucide:github",
+          to: "https://github.com/cavadosi/BetterUI",
+          target: "_blank"
+        }
+      ]
     },
     aside: {
-      useLevel: true,
+      useLevel: false,
       collapse: false
     },
     main: {
@@ -451,26 +483,31 @@ const appConfig0 = defineAppConfig({
     },
     footer: {
       credits: "\xA9 Cavadosi 2024",
-      links: [{
-        icon: "lucide:github",
-        to: "https://github.com/cavadosi/BetterUI",
-        target: "_blank"
-      }]
+      links: [
+        {
+          icon: "lucide:github",
+          to: "https://github.com/cavadosi/BetterUI",
+          target: "_blank"
+        }
+      ]
     },
     toc: {
       enable: true,
       title: "On This Page",
-      links: [{
-        title: "Star on GitHub",
-        icon: "lucide:star",
-        to: "https://github.com/cavadosi/BetterUI",
-        target: "_blank"
-      }, {
-        title: "Create Issues",
-        icon: "lucide:circle-dot",
-        to: "https://github.com/cavadosi/BetterUI/issues",
-        target: "_blank"
-      }]
+      links: [
+        {
+          title: "Star on GitHub",
+          icon: "lucide:star",
+          to: "https://github.com/cavadosi/BetterUI",
+          target: "_blank"
+        },
+        {
+          title: "Create Issues",
+          icon: "lucide:circle-dot",
+          to: "https://github.com/cavadosi/BetterUI/issues",
+          target: "_blank"
+        }
+      ]
     },
     search: {
       enable: true,
@@ -2300,7 +2337,7 @@ function useOgImageRuntimeConfig() {
   };
 }
 
-const componentNames = [{"hash":"p9SRglF9QLydAVFQ9UbxoKq86YV8EwP8TtGTIL5PWqE","pascalName":"OgImageShadcnDocs","kebabName":"og-image-shadcn-docs","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/shadcn-docs-nuxt/components/OgImage/ShadcnDocs.vue","category":"app"},{"hash":"MlnXt-4pSsc-S0S-NyO1mjaxwp9hRjHjCY9kvDedhdQ","pascalName":"BrandedLogo","kebabName":"branded-logo","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/BrandedLogo.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"},{"hash":"fpeX9mEOdoiwmgFVE7hebxqWjsIhD1kTbNd-q3hCd44","pascalName":"Frame","kebabName":"frame","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Frame.vue","category":"community","credits":"@arashsheyda <https://github.com/arashsheyda>"},{"hash":"iEMfMtE3Z-GRD7M8UdLMA8z5kz-STiQ6hixM09D2-dU","pascalName":"Nuxt","kebabName":"nuxt","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Nuxt.vue","category":"community","credits":"NuxtLabs <https://nuxtlabs.com/>"},{"hash":"OPSMK5e1Mj-B-KLuoxjOG3CTzYq1s5ld-uvugb--Fog","pascalName":"NuxtSeo","kebabName":"nuxt-seo","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/NuxtSeo.vue","category":"community","credits":"Nuxt SEO <https://nuxtseo.com/>"},{"hash":"9zhUtkB6optlrF0l5DEhgmR2EaIfGQP-Opy1PHC-ea0","pascalName":"Pergel","kebabName":"pergel","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Pergel.vue","category":"community","credits":"Pergel <https://nuxtlabs.com/>"},{"hash":"elBNvk6E8lXN8E9YywMD9ZKEiLvF8lfcfuj7SBFp5UI","pascalName":"SimpleBlog","kebabName":"simple-blog","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/SimpleBlog.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"},{"hash":"NZaFkzgYlwbuyTVFd6EHH-xQWdLAvf9XnrhiwGpu4Sg","pascalName":"UnJs","kebabName":"un-js","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/UnJs.vue","category":"community","credits":"UnJS <https://unjs.io/>"},{"hash":"QXHbDpwVYCs3sUZl2lD4T9ynY6wsyAvK7oqRs1B0wsI","pascalName":"Wave","kebabName":"wave","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Wave.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"},{"hash":"6osD1f2PCUicjON4dfrsnxhXzikrQ0yfi43nndOjEuY","pascalName":"WithEmoji","kebabName":"with-emoji","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/WithEmoji.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"}];
+const componentNames = [{"hash":"p9SRglF9QLydAVFQ9UbxoKq86YV8EwP8TtGTIL5PWqE","pascalName":"OgImageShadcnDocs","kebabName":"og-image-shadcn-docs","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/shadcn-docs-nuxt/components/OgImage/ShadcnDocs.vue","category":"app"},{"hash":"MlnXt-4pSsc-S0S-NyO1mjaxwp9hRjHjCY9kvDedhdQ","pascalName":"BrandedLogo","kebabName":"branded-logo","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/BrandedLogo.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"},{"hash":"fpeX9mEOdoiwmgFVE7hebxqWjsIhD1kTbNd-q3hCd44","pascalName":"Frame","kebabName":"frame","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Frame.vue","category":"community","credits":"@arashsheyda <https://github.com/arashsheyda>"},{"hash":"iEMfMtE3Z-GRD7M8UdLMA8z5kz-STiQ6hixM09D2-dU","pascalName":"Nuxt","kebabName":"nuxt","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Nuxt.vue","category":"community","credits":"NuxtLabs <https://nuxtlabs.com/>"},{"hash":"OPSMK5e1Mj-B-KLuoxjOG3CTzYq1s5ld-uvugb--Fog","pascalName":"NuxtSeo","kebabName":"nuxt-seo","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/NuxtSeo.vue","category":"community","credits":"Nuxt SEO <https://nuxtseo.com/>"},{"hash":"9zhUtkB6optlrF0l5DEhgmR2EaIfGQP-Opy1PHC-ea0","pascalName":"Pergel","kebabName":"pergel","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Pergel.vue","category":"community","credits":"Pergel <https://nuxtlabs.com/>"},{"hash":"elBNvk6E8lXN8E9YywMD9ZKEiLvF8lfcfuj7SBFp5UI","pascalName":"SimpleBlog","kebabName":"simple-blog","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/SimpleBlog.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"},{"hash":"NZaFkzgYlwbuyTVFd6EHH-xQWdLAvf9XnrhiwGpu4Sg","pascalName":"UnJs","kebabName":"un-js","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/UnJs.vue","category":"community","credits":"UnJS <https://unjs.io/>"},{"hash":"QXHbDpwVYCs3sUZl2lD4T9ynY6wsyAvK7oqRs1B0wsI","pascalName":"Wave","kebabName":"wave","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/Wave.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"},{"hash":"6osD1f2PCUicjON4dfrsnxhXzikrQ0yfi43nndOjEuY","pascalName":"WithEmoji","kebabName":"with-emoji","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/Templates/Community/WithEmoji.vue","category":"community","credits":"Full Stack Heroes <https://fullstackheroes.com/>"},{"hash":"n1Dw25lza1wfE7vWsH66No8KrxE2YAsG8NiPb-FSyDU","pascalName":"OgImage","kebabName":"og-image","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/OgImage/OgImage.js","category":"app"},{"hash":"D9FaYUWqPNE3eiuw56d2BNHg975tQAhZI2MMV601ihs","pascalName":"OgImageScreenshot","kebabName":"og-image-screenshot","path":"C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-og-image/dist/runtime/app/components/OgImage/OgImageScreenshot.js","category":"app"}];
 
 function normaliseOptions(_options) {
   const options = { ..._options };
