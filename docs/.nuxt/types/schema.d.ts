@@ -34,9 +34,9 @@ declare module '@nuxt/schema' {
      */
     ["colorMode"]: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
-     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module`
+     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module`
      */
-    ["site"]: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
+    ["site"]: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
      * Configuration for `nuxt-og-image`
      */
@@ -88,9 +88,9 @@ declare module '@nuxt/schema' {
      */
     ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
-     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module`
+     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module`
      */
-    ["site"]?: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["site"]?: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
      * Configuration for `nuxt-og-image`
      */
@@ -107,7 +107,7 @@ declare module '@nuxt/schema' {
      * Configuration for `@nuxt/telemetry`
      */
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["shadcn-nuxt", Exclude<NuxtConfig["shadcn"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["nuxt-og-image", Exclude<NuxtConfig["ogImage"], boolean>] | ["@nuxt/scripts", Exclude<NuxtConfig["scripts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["shadcn-nuxt", Exclude<NuxtConfig["shadcn"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["nuxt-og-image", Exclude<NuxtConfig["ogImage"], boolean>] | ["@nuxt/scripts", Exclude<NuxtConfig["scripts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
 }
 declare module 'nuxt/schema' {
@@ -153,10 +153,10 @@ declare module 'nuxt/schema' {
      */
     ["colorMode"]: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
-     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module`
-     * @see https://www.npmjs.com/package/C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module
+     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module`
+     * @see https://www.npmjs.com/package/C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module
      */
-    ["site"]: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
+    ["site"]: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
     /**
      * Configuration for `nuxt-og-image`
      * @see https://www.npmjs.com/package/nuxt-og-image
@@ -220,10 +220,10 @@ declare module 'nuxt/schema' {
      */
     ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
-     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module`
-     * @see https://www.npmjs.com/package/C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module
+     * Configuration for `C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module`
+     * @see https://www.npmjs.com/package/C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module
      */
-    ["site"]?: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["site"]?: typeof import("C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     /**
      * Configuration for `nuxt-og-image`
      * @see https://www.npmjs.com/package/nuxt-og-image
@@ -244,7 +244,7 @@ declare module 'nuxt/schema' {
      * @see https://www.npmjs.com/package/@nuxt/telemetry
      */
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["shadcn-nuxt", Exclude<NuxtConfig["shadcn"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["C:/Users/jpequ/Documents/GitHub/BetterUI/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["nuxt-og-image", Exclude<NuxtConfig["ogImage"], boolean>] | ["@nuxt/scripts", Exclude<NuxtConfig["scripts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["shadcn-nuxt", Exclude<NuxtConfig["shadcn"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["@nuxt/icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["C:/Users/jpequ/Documents/GitHub/BetterUI/docs/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["nuxt-og-image", Exclude<NuxtConfig["ogImage"], boolean>] | ["@nuxt/scripts", Exclude<NuxtConfig["scripts"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
    app: {
@@ -577,7 +577,7 @@ declare module 'nuxt/schema' {
 
       defaultLocale: any,
 
-      integrity: number,
+      integrity: any,
 
       experimental: {
          stripQueryParameters: boolean,
@@ -725,7 +725,7 @@ declare module 'nuxt/schema' {
    },
 
    "nuxt-scripts": {
-      version: any,
+      version: string,
 
       defaultScriptOptions: {
          trigger: string,
