@@ -1,6 +1,0 @@
-title: Components
-icon: iconoir:cube
-navigation.redirect: /components/button
-sidebar:
-  style: default
-collapse: false
