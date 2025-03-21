@@ -4,55 +4,49 @@ declare module "nitropack/types" {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
     '/__nuxt_error': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/handlers/renderer').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/nuxt/dist/core/runtime/nitro/handlers/renderer').default>>>>
     }
     '/api/_mdc/highlight': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/highlighter/event-handler').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/@nuxtjs/mdc/dist/runtime/highlighter/event-handler').default>>>>
     }
     '/api/_nuxt_icon/:collection': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/icon/dist/runtime/server/api').default>>>>
-    }
-    '/__site-config__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/routes/__site-config__/debug').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/@nuxt/icon/dist/runtime/server/api').default>>>>
     }
     '/__og-image__/font/**': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/server/routes/font').default>>>>
-    }
-    '/__og-image__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/server/routes/debug.json').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/nuxt-og-image/dist/runtime/server/routes/font').default>>>>
     }
     '/__og-image__/image/**': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/server/routes/image').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/nuxt-og-image/dist/runtime/server/routes/image').default>>>>
     }
     '/__og-image__/static/**': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/server/routes/image').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/nuxt-og-image/dist/runtime/server/routes/image').default>>>>
     }
     '/api/_content/query/:qid/**:params': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
     }
     '/api/_content/query/:qid': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
     }
     '/api/_content/query': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
     }
-    '/api/_content/cache.json': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>>>
+    '/api/_content/cache.1742546908562.json': {
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>>>
     }
-    '/api/_content/search': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/search').default>>>>
+    '/api/_content/search-1742546908562': {
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/search').default>>>>
     }
     '/api/_content/navigation/:qid/**:params': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>>>
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>>>
     }
     '/api/_content/navigation/:qid': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>>>
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>>>
     }
     '/api/_content/navigation': {
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>>>
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/shadcn-docs-nuxt/node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>>>
     }
     '/_ipx/**': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/image/dist/runtime/ipx').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../../node_modules/@nuxt/image/dist/runtime/ipx').default>>>>
     }
   }
 }
