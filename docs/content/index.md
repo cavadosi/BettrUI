@@ -8,22 +8,22 @@ navigation: false
 announcement:
   title: 'Release v0.8.21'
   icon: '🎉'
-  to: https://github.com/cavadosi/BetterUI/releases/latest
+  to: https://github.com/ZTL-UwU/shadcn-docs-nuxt/releases/latest
   target: _blank
 actions:
   - name: Documentation
-    to: #
+    to: https://shadcn-docs-nuxt.vercel.app/getting-started/introduction
   - name: GitHub
     variant: outline
-    to: https://github.com/cavadosi/BetterUI
+    to: https://github.com/ZTL-UwU/shadcn-docs-nuxt
     leftIcon: 'lucide:github'
 ---
 
 #title
-Welcome to BetterUI
+Welcome to shadcn-docs-nuxt
 
 #description
-Beautifully designed UI library. :br Customizable. Compatible. Open Source.
+Beautifully designed Nuxt Content template built with shadcn-vue. :br Customizable. Compatible. Open Source.
 ::
 
 ::div{class="border rounded-lg shadow-md"}

@@ -1,5 +1,5 @@
 {
-  "name": "better-ui-docs",
+  "name": "shadcn-docs-nuxt-starter",
   "private": true,
   "type": "module",
   "scripts": {
@@ -14,5 +14,10 @@
     "shadcn-docs-nuxt": "^0.8.21",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }
