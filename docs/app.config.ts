@@ -1,7 +1,7 @@
 export default defineAppConfig({
   shadcnDocs: {
     site: {
-      name: 'shadcn-docs-nuxt',
+      name: 'BetterUI',
       description: 'Beautifully designed Nuxt Content template built with shadcn-vue. Customizable. Compatible. Open Source.',
     },
     theme: {
@@ -10,49 +10,75 @@ export default defineAppConfig({
       radius: 0.5,
     },
     header: {
-      title: 'shadcn-docs-starter',
+      title: 'BetterUI',
       showTitle: true,
       darkModeToggle: true,
       logo: {
-        light: '/logo.svg',
-        dark: '/logo-dark.svg',
+        light: "/logo.png",
+        dark: "/logo.png"
       },
-      nav: [],
       links: [{
-        icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
+        icon: "lucide:github",
+        to: "https://github.com/cavadosi/BetterUI",
+        target: "_blank"
       }],
+      nav: [
+        {
+          title: "Docs",
+          links: [
+            {
+              icon: "solar:info-circle-linear",
+              title: "Introduction",
+              description: "Install and configure the component library",
+              to: "/introduction",
+              target: "_self",
+              showLinkIcon: true
+            },
+            {
+              icon: "ic:outline-file-download",
+              title: "Instalation",
+              description: "Install and configure the component library",
+              to: "/instalation",
+              target: "_self",
+              showLinkIcon: true
+            },
+            {
+              icon: "mdi:cube-outline",
+              title: "Components",
+              description: "Install and configure the component library",
+              to: "/components/button",
+              target: "_self",
+              showLinkIcon: true
+            }
+          ]
+        }
+      ],
     },
     aside: {
-      useLevel: true,
-      collapse: false,
-    },
-    main: {
-      breadCrumb: true,
-      showTitle: true,
+      useLevel: false,
+      collapse: false
     },
     footer: {
-      credits: 'Copyright © 2024',
+      credits: "\xA9 Cavadosi 2024",
       links: [{
-        icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
+        icon: "lucide:github",
+        to: "https://github.com/cavadosi/BetterUI",
+        target: "_blank"
       }],
     },
     toc: {
       enable: true,
-      title: 'On This Page',
+      title: "On This Page",
       links: [{
-        title: 'Star on GitHub',
-        icon: 'lucide:star',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-        target: '_blank',
+        title: "Star on GitHub",
+        icon: "lucide:star",
+        to: "https://github.com/cavadosi/BetterUI",
+        target: "_blank"
       }, {
-        title: 'Create Issues',
-        icon: 'lucide:circle-dot',
-        to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/issues',
-        target: '_blank',
+        title: "Create Issues",
+        icon: "lucide:circle-dot",
+        to: "https://github.com/cavadosi/BetterUI/issues",
+        target: "_blank"
       }],
     },
     search: {
