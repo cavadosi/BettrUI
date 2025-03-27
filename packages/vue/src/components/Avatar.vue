@@ -31,7 +31,6 @@ const props = defineProps<{
   alt: string;
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   rounded?: "none" | "sm" | "md" | "lg" | "xl" | "full";
-  class?: string;
 }>();
 </script>
 
@@ -39,7 +38,7 @@ const props = defineProps<{
   <img
     :src="src"
     :alt="alt"
-    :class="twMerge(AvatarVariants({ size, rounded }), props.class)"
+    :class="twMerge(AvatarVariants({ size, rounded }))"
     v-bind="$attrs"
   />
 </template>
