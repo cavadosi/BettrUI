@@ -31,6 +31,7 @@
     "storybook": "^8.6.4"
   },
   "peerDependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
     "tailwindcss": "^4.0.12"
   },
   "scripts": {
