@@ -26,7 +26,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<Avatar v-bind="args" class="p-16 bg-red-500"/>',
+  template: '<Avatar v-bind="args"/>',
 });
 
 export const Default = Template.bind({});
