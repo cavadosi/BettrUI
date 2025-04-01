@@ -1,41 +1,73 @@
 {
-  "name": "@better/react",
-  "version": "1.0.0",
-  "main": "src/index.ts",
-  "bin": {
-    "@better/react": "./src/bin/better-ui.ts"
-  },
+  "name": "@bettr-ui/react",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/bettr-ui-react.umd.cjs",
+  "module": "./dist/bettr-ui-react.js",
   "exports": {
-    ".": "./src/index.ts"
-  },
-  "dependencies": {
-    "@headlessui/react": "^2.2.0",
-    "@heroicons/react": "^2.2.0",
-    "@popperjs/core": "^2.11.8",
-    "class-variance-authority": "^0.7.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-popper": "^2.3.0",
-    "tailwind-merge": "^3.0.2"
-  },
-  "devDependencies": {
-    "@chromatic-com/storybook": "^3.2.5",
-    "@storybook/addon-essentials": "^8.6.4",
-    "@storybook/addon-onboarding": "^8.6.4",
-    "@storybook/blocks": "^8.6.4",
-    "@storybook/experimental-addon-test": "^8.6.4",
-    "@storybook/react": "^8.6.4",
-    "@storybook/react-vite": "^8.6.4",
-    "@storybook/test": "^8.6.4",
-    "prop-types": "^15.8.1",
-    "storybook": "^8.6.4"
-  },
-  "peerDependencies": {
-    "@tailwindcss/postcss": "^4.0.17",
-    "tailwindcss": "^4.0.12"
+    ".": {
+      "import": "./dist/bettr-ui-react.js",
+      "require": "./dist/bettr-ui-react.umd.cjs"
+    },
+    "./styles": "./dist/bettr-ui-react.css"
   },
   "scripts": {
+    "dev": "vite",
+    "prebuild": "rm -rf dist",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepublish": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "tailwind-merge": "^3.0.2",
+    "@headlessui/react": "^2.2.0",
+    "@popperjs/core": "^2.11.8",
+    "react-popper": "^2.3.0",
+    "@tailwindcss/postcss": "^4.0.17",
+    "tailwindcss": "^4.0.17",
+    "postcss": "^8.5.3"
+  },
+  "devDependencies": {
+    "vite-tsconfig-paths": "^5.1.4",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "@chromatic-com/storybook": "^3.2.6",
+    "@eslint/js": "^9.21.0",
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/addon-onboarding": "^8.6.11",
+    "@storybook/blocks": "^8.6.11",
+    "@storybook/react": "^8.6.11",
+    "@storybook/react-vite": "^8.6.11",
+    "@storybook/test": "^8.6.11",
+    "@types/node": "^22.13.14",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-storybook": "^0.12.0",
+    "globals": "^15.15.0",
+    "storybook": "^8.6.11",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3"
+  },
+  "peerDependencies": {
+    "@heroicons/react": "^2.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }

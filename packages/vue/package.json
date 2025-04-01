@@ -1,5 +1,5 @@
 {
-  "name": "@better/vue",
+  "name": "@bettr-ui/vue",
   "version": "1.0.0",
   "main": "src/index.ts",
   "bin": {
@@ -16,23 +16,24 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.5",
-    "@storybook/addon-essentials": "^8.6.4",
-    "@storybook/addon-onboarding": "^8.6.4",
-    "@storybook/blocks": "^8.6.4",
-    "@storybook/experimental-addon-test": "^8.6.4",
-    "@storybook/test": "^8.6.4",
-    "@storybook/vue3": "^8.6.4",
-    "@storybook/vue3-vite": "^8.6.4",
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/addon-onboarding": "^8.6.11",
+    "@storybook/blocks": "^8.6.11",
+    "@storybook/experimental-addon-test": "^8.6.11",
+    "@storybook/test": "^8.6.11",
+    "@storybook/vue3": "^8.6.11",
+    "@storybook/vue3-vite": "^8.6.11",
     "@vitejs/plugin-vue": "^5.2.1",
     "clsx": "^2.1.1",
     "playwright": "^1.51.0",
-    "storybook": "^8.6.4",
+    "storybook": "^8.6.11",
     "vite": "^5.0.0",
     "vue-tsc": "^2.1.10"
   },
   "peerDependencies": {
     "@tailwindcss/postcss": "^4.0.17",
-    "tailwindcss": "^4.0.12"
+    "tailwindcss": "^4.0.17",
+    "postcss": "^8.5.3"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
