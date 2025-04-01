@@ -1,5 +1,5 @@
 {
-  "name": "@better/ui",
+  "name": "bettr-ui",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -9,8 +9,7 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "storybook": "^8.6.4"
+    "prettier": "^3.5.3"
   },
   "packageManager": "npm@10.9.0",
   "workspaces": [
@@ -21,6 +20,8 @@
     "turbo": "^2.4.4",
     "typescript": "5.8.2",
     "chroma-js": "^3.1.2",
-    "shadcn-docs-nuxt": "^0.8.21"
+    "shadcn-docs-nuxt": "^0.8.21",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
