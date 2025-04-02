@@ -8,7 +8,7 @@ const TextareaVariants = cva(
     variants: {
       disabled: {
         true: "disabled:bg-secondary-100 disabled:dark:bg-secondary-950 cursor-not-allowed",
-        false: "ocus:outline-2 focus:outline-primary-600 focus:-outline-offset-2",
+        false: "focus:outline-2 focus:outline-primary-600 focus:-outline-offset-2",
       },
     },
     defaultVariants: {
@@ -27,11 +27,7 @@ const props = defineProps<{
   name: string;
   class?: string;
 }>();
-
-defineEmits(["update:modelValue"]);
-
 </script>
-
 
 <template>
     <div>
@@ -45,11 +41,9 @@ defineEmits(["update:modelValue"]);
           :rows="rows ?? 4"
           :disabled="disabled"
           :placeholder="placeholder"
-          :value="modelValue"
-          @input="$emit('update:modelValue', ($event.target as HTMLTextAreaElement).value)"
+          :v-model="modelValue"
           :class="twMerge(TextareaVariants({ disabled }), props.class)"
         ></textarea>
       </div>
     </div>
-  </template>
-  
+</template>

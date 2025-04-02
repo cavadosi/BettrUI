@@ -19,7 +19,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<TextArea v-bind="args" v-model:value="args.modelValue" />',
+  template: '<TextArea v-bind="args" v-model="modelValue" />',
 });
 
 export const Default = Template.bind({});
@@ -30,6 +30,7 @@ Default.args = {
   rows: 4,
   disabled: false,
   placeholder: "Write your thoughts here...",
+  modelValue: "",
 };
 
 export const Disabled = Template.bind({});
@@ -40,4 +41,5 @@ Disabled.args = {
   rows: 4,
   disabled: true,
   placeholder: "Write your thoughts here...",
+  modelValue: "",
 };
