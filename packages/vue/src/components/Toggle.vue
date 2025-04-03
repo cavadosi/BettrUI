@@ -19,6 +19,7 @@ const ToggleVariants = cva(
 );
 
 const props = defineProps<{
+  modelValue: boolean;  
   disabled?: boolean;
   label?: string;
   description?: string;
@@ -27,13 +28,7 @@ const props = defineProps<{
   class?: string;
 }>();
 
-const isActive = defineModel<boolean>({ required: true });
 
-const toggle = () => {
-  if (!props.disabled) {
-    isActive.value = !isActive.value;
-  }
-};
 </script>
 
 <template>
@@ -41,28 +36,28 @@ const toggle = () => {
     <button
       type="button"
       :class="twMerge(ToggleVariants({ disabled: props.disabled }), props.class)"
-      :aria-checked="isActive"
+      :aria-checked="modelValue"
       role="switch"
       :disabled="disabled"
-      @click="toggle"
+      @click="!modelValue"
     >
       <span class="sr-only">{{ label }}</span>
       <span
         aria-hidden="true"
         class="pointer-events-none inline-block size-5 transform rounded-full bg-white ring-0 shadow-sm transition duration-200 ease-in-out"
-        :class="{ 'translate-x-5': isActive }"
+        :class="{ 'translate-x-5': modelValue }"
       >
         <span
           v-if="inactiveIcon"
           class="absolute inset-0 flex size-full items-center justify-center transition-opacity duration-200 ease-in"
-          :class="{ 'opacity-0 duration-100 ease-out': isActive }"
+          :class="{ 'opacity-0 duration-100 ease-out': modelValue }"
         >
           <Icon :name="inactiveIcon" variant="solid" class="size-3 text-secondary-400 dark:text-secondary-300" />
         </span>
         <span
           v-if="activeIcon"
           class="absolute inset-0 flex size-full items-center justify-center opacity-0 transition-opacity duration-100 ease-out"
-          :class="{ 'opacity-100 duration-200 ease-in': isActive }"
+          :class="{ 'opacity-100 duration-200 ease-in': modelValue }"
         >
           <Icon :name="activeIcon" variant="solid" class="size-3 text-primary-600 dark:text-primary-500" />
         </span>
