@@ -22,6 +22,7 @@
     "chroma-js": "^3.1.2",
     "shadcn-docs-nuxt": "^0.8.21",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "vue": "^3.5.13"
   }
 }
