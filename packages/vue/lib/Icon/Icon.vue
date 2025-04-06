@@ -1,4 +1,3 @@
-<!-- filepath: /Users/diego/CFGS/ifp/proyecto/BetterUI/packages/vue/src/components/Icon.vue -->
 <script setup lang="ts">
 import * as OutlineIcons from "@heroicons/vue/24/outline";
 import * as SolidIcons from "@heroicons/vue/24/solid";
