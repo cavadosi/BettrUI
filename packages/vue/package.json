@@ -25,10 +25,11 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "class-variance-authority": "^0.7.1",
-    "tailwind-merge": "^3.1.0",
+    "@headlessui/vue": "^1.7.23",
     "@tailwindcss/postcss": "^4.1.1",
+    "class-variance-authority": "^0.7.1",
     "postcss": "^8.5.3",
+    "tailwind-merge": "^3.1.0",
     "tailwindcss": "^4.1.1"
   },
   "devDependencies": {
