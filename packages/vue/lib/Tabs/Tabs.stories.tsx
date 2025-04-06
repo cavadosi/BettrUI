@@ -27,21 +27,21 @@ const render = (args: any) => ({
   },
   template: `
     <Tabs v-bind="args">
-      <template #Home>
+      <template #home>
         <div class="p-4 dark:text-white rounded-md shadow ">
           <h2 class="text-lg font-semibold">Home Content</h2>
           <p>This is the content for the Home tab.</p>
         </div>
       </template>
 
-      <template #Profile>
+      <template #profile>
         <div class="p-4 dark:text-white rounded-md shadow">
           <h2 class="text-lg font-semibold">Profile Content</h2>
           <p>This is the content for the Profile tab.</p>
         </div>
       </template>
 
-      <template #Settings>
+      <template #settings>
         <div class="p-4 dark:text-white rounded-md shadow">
           <h2 class="text-lg font-semibold">Settings Content</h2>
           <p>This is the content for the Settings tab.</p>
@@ -53,7 +53,7 @@ const render = (args: any) => ({
 
 export const Default: Story = {
   args: {
-    items: [{ label: "Home" }, { label: "Profile" }, { label: "Settings" }],
+    items: [{ label: "Home", slot: "home" as const }, { label: "Profile", slot: "profile" as const }, { label: "Settings",slot: "settings" as const }],
   },
   render,
 };
@@ -61,9 +61,9 @@ export const Default: Story = {
 export const WithIcons: Story = {
   args: {
     items: [
-      { label: "Home", icon: "Home" },
-      { label: "Profile", icon: "User" },
-      { label: "Settings", icon: "Cog" },
+      { label: "Home", slot: "profile" as const, icon: "Home" },
+      { label: "Profile", slot: "profile" as const, icon: "User" },
+      { label: "Settings", slot: "settings" as const, icon: "Cog" },
     ],
     iconVariant: "outline"
   },

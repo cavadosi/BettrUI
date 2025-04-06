@@ -32,7 +32,7 @@
 
       <TabPanels>
         <TabPanel v-for="item in items" :key="item.label">
-          <slot :name="item.label" />
+          <slot :name="item.slot" />
         </TabPanel>
       </TabPanels>
     </div>
@@ -46,6 +46,7 @@ import Icon from "../Icon/Icon.vue";
 
 interface TabItem {
   label: string;
+  slot: string;
   icon?: string;
 }
 
