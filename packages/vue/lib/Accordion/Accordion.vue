@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
-import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 import Icon from "../Icon/Icon.vue";
 
