@@ -1,4 +1,4 @@
-# 📌 Better UI
+# 📌 BettrUI
 
 <details>
   <summary>📖 Explicación idea del proyecto</summary>
