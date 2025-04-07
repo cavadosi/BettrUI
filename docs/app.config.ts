@@ -48,6 +48,15 @@ export default defineAppConfig({
               target: "_self",
               showLinkIcon: true,
             },
+            {
+              icon: "solar:palette-line-duotone",
+              title: "Theming",
+              description:
+                "Quickly set up the library and start building with our components.",
+              to: "/theming",
+              target: "_self",
+              showLinkIcon: true,
+            },
           ],
         },
         {
@@ -58,7 +67,7 @@ export default defineAppConfig({
               title: "React",
               description:
                 "Install, configure, and use the components in your React application with ease.",
-              to: "/installation/react",
+              to: "/react",
               target: "_self",
               showLinkIcon: true,
             },
@@ -67,7 +76,7 @@ export default defineAppConfig({
               title: "Vue",
               description:
                 "Get up and running with the Vue version of the component library.",
-              to: "/installation/vue",
+              to: "/vue",
               target: "_self",
               showLinkIcon: true,
             },
