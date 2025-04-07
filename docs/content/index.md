@@ -20,7 +20,7 @@ actions:
 ---
 
 #title
-Welcome to BetterUI
+Welcome to BettrUI
 
 #description
 Beautifully designed Nuxt Content template built with shadcn-vue. :br Customizable. Compatible. Open Source.

@@ -1,89 +1,115 @@
 export default defineAppConfig({
   shadcnDocs: {
     site: {
-      name: 'BetterUI',
-      description: 'Beautifully designed Nuxt Content template built with shadcn-vue. Customizable. Compatible. Open Source.',
+      name: "BettrUI",
+      description:
+        "A modern, framework-agnostic UI component library for React and Vue — built with Tailwind CSS v4+. Customizable. Fast. Open Source.",
     },
+
     theme: {
       customizable: true,
-      color: 'zinc',
+      color: "zinc",
       radius: 0.5,
     },
     header: {
-      title: 'BetterUI',
+      title: "BettrUI",
       showTitle: true,
       darkModeToggle: true,
       logo: {
         light: "/logo.png",
-        dark: "/logo.png"
+        dark: "/logo.png",
       },
-      links: [{
-        icon: "lucide:github",
-        to: "https://github.com/cavadosi/BetterUI",
-        target: "_blank"
-      }],
+      links: [
+        {
+          icon: "lucide:github",
+          to: "https://github.com/cavadosi/BetterUI",
+          target: "_blank",
+        },
+      ],
       nav: [
         {
-          title: "Docs",
+          title: "Getting Started",
           links: [
             {
               icon: "solar:info-circle-linear",
               title: "Introduction",
-              description: "Install and configure the component library",
+              description:
+                "Understand the philosophy behind the library and how it fits into your project.",
               to: "/introduction",
               target: "_self",
-              showLinkIcon: true
+              showLinkIcon: true,
             },
             {
-              icon: "ic:outline-file-download",
-              title: "Instalation",
-              description: "Install and configure the component library",
-              to: "/instalation",
+              icon: "lucide:rocket",
+              title: "Getting Started",
+              description:
+                "Quickly set up the library and start building with our components.",
+              to: "/getting-started",
               target: "_self",
-              showLinkIcon: true
+              showLinkIcon: true,
+            },
+          ],
+        },
+        {
+          title: "Frameworks",
+          links: [
+            {
+              icon: "devicon:react",
+              title: "React",
+              description:
+                "Install, configure, and use the components in your React application with ease.",
+              to: "/installation/react",
+              target: "_self",
+              showLinkIcon: true,
             },
             {
-              icon: "mdi:cube-outline",
-              title: "Components",
-              description: "Install and configure the component library",
-              to: "/components/button",
+              icon: "vscode-icons:file-type-vue",
+              title: "Vue",
+              description:
+                "Get up and running with the Vue version of the component library.",
+              to: "/installation/vue",
               target: "_self",
-              showLinkIcon: true
-            }
-          ]
-        }
+              showLinkIcon: true,
+            },
+          ],
+        },
       ],
     },
     aside: {
-      useLevel: false,
-      collapse: false
+      useLevel: true,
+      collapse: false,
     },
     footer: {
       credits: "\xA9 Cavadosi 2024",
-      links: [{
-        icon: "lucide:github",
-        to: "https://github.com/cavadosi/BetterUI",
-        target: "_blank"
-      }],
+      links: [
+        {
+          icon: "lucide:github",
+          to: "https://github.com/cavadosi/BetterUI",
+          target: "_blank",
+        },
+      ],
     },
     toc: {
       enable: true,
       title: "On This Page",
-      links: [{
-        title: "Star on GitHub",
-        icon: "lucide:star",
-        to: "https://github.com/cavadosi/BetterUI",
-        target: "_blank"
-      }, {
-        title: "Create Issues",
-        icon: "lucide:circle-dot",
-        to: "https://github.com/cavadosi/BetterUI/issues",
-        target: "_blank"
-      }],
+      links: [
+        {
+          title: "Star on GitHub",
+          icon: "lucide:star",
+          to: "https://github.com/cavadosi/BetterUI",
+          target: "_blank",
+        },
+        {
+          title: "Create Issues",
+          icon: "lucide:circle-dot",
+          to: "https://github.com/cavadosi/BetterUI/issues",
+          target: "_blank",
+        },
+      ],
     },
     search: {
       enable: true,
       inAside: false,
-    }
-  }
+    },
+  },
 });
