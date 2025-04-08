@@ -5,12 +5,6 @@ import Container from "./Container.vue";
 const meta: Meta<typeof Container> = {
   title: "Vue/Container",
   component: Container,
-  argTypes: {
-    children: {
-        control: "text",
-        description: "Text content of the container",
-    },
-  } ,
 };
 
 export default meta;
@@ -22,13 +16,12 @@ const render = (args: any) => ({
     setup() {
         return { args };
     },
-    template: `<Container v-bind="args" />`,
+    template: `<Container v-bind="args" >asd</Container>`,
 });
 
 export const Default: Story = {
     args: {
         class: "bg-secondary-200",
-        children: "This is a container",
     },
     render,
 };

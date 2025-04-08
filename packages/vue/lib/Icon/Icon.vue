@@ -18,11 +18,13 @@ const props = defineProps<{
 const IconComponent = computed(() => {
   const variant = props.variant || "outline";
   const icons = IconVariants[variant];
-  return icons[`${props.name}Icon` as keyof typeof icons] ;
+  return icons[`${props.name}Icon` as keyof typeof icons];
 });
 
 if (!IconComponent.value) {
-  console.warn(`Icon "${props.name}" not found in Heroicons (${props.variant || "outline"})`);
+  console.warn(
+    `Icon "${props.name}" not found in Heroicons (${props.variant || "outline"})`,
+  );
 }
 </script>
 
