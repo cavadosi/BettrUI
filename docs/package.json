@@ -1,24 +1,100 @@
 {
-  "name": "shadcn-docs-nuxt-starter",
-  "private": true,
+  "name": "bettr-ui",
   "type": "module",
+  "version": "0.8.21",
+  "packageManager": "pnpm@10.8.0",
+  "description": "Effortless and beautiful docs template built with Nuxt Content & shadcn-vue.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cavadosi/BettrUI"
+  },
+  "bugs": "https://github.com/cavadosi/BettrUI/issues",
+  "keywords": [
+    "markdown",
+    "docs",
+    "vue",
+    "nuxt",
+    "documentation-tool",
+    "nuxt-content",
+    "shadcn-vue"
+  ],
+  "main": "./nuxt.config.ts",
+  "files": [
+    "app",
+    "app.vue",
+    "assets",
+    "components",
+    "composables",
+    "layouts",
+    "lib",
+    "nuxt.config.ts",
+    "pages",
+    "plugins",
+    "types"
+  ],
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "build": "pnpm run -C www build",
+    "dev": "pnpm run -C www dev",
+    "generate": "pnpm run -C www generate",
+    "preview": "pnpm run -C www preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "taze": "taze"
   },
   "dependencies": {
-    "@bettr-ui/vue": "^0.0.4",
-    "nuxt": "^3.16.0",
-    "shadcn-docs-nuxt": "^0.8.21",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "@bettr-ui/vue": "^0.0.7",
+    "@iconify-json/lucide": "^1.2.35",
+    "@iconify-json/vscode-icons": "^1.2.19",
+    "@nuxt/content": "^2.13.4",
+    "@nuxt/fonts": "^0.11.1",
+    "@nuxt/icon": "^1.12.0",
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/scripts": "^0.11.5",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/mdc": "^0.16.1",
+    "@tailwindcss/vite": "^4.1.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "nuxt-og-image": "^5.1.1",
+    "reka-ui": "^2.2.0",
+    "shadcn-nuxt": "^2.0.1",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss": "^4.1.3",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17"
+    "@antfu/eslint-config": "^4.12.0",
+    "@iconify-json/lucide-lab": "^1.2.3",
+    "@iconify/utils": "^2.3.0",
+    "@nuxt/devtools": "^2.3.2",
+    "@nuxt/kit": "^3.16.2",
+    "@vueuse/core": "^13.1.0",
+    "@vueuse/nuxt": "^13.1.0",
+    "eslint": "^9.24.0",
+    "minisearch": "^7.1.2",
+    "nuxt": "^3.16.2",
+    "pkg-pr-new": "^0.0.42",
+    "shiki": "^3.2.2",
+    "taze": "^19.0.4",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vue-tsc": "^2.2.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ],
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "vue-demi"
+    ],
+    "patchedDependencies": {
+      "fontaine@0.5.0": "patches/fontaine@0.5.0.patch"
+    }
   }
 }
