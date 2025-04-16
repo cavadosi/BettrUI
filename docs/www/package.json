@@ -1,8 +1,7 @@
 {
-  "name": "bettr-ui",
+  "name": "shadcn-docs-nuxt-starter",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.8.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
