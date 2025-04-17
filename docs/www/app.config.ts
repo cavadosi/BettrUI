@@ -60,7 +60,7 @@ export default defineAppConfig({
           ],
         },
         {
-          title: "Frameworks",
+          title: "Components",
           links: [
             {
               icon: "devicon:react",
