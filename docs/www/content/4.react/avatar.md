@@ -1,158 +1,169 @@
 ---
-icon: lucide:triangle-alert
 badges:
-  - value: Docus
-    to: https://docus.dev/api/components#alert
-    target: _blank
   - value: Source
     icon: lucide:code
-    to: https://github.com/ZTL-UwU/shadcn-docs-nuxt/blob/main/components/content/Alert.vue
+    to: https://github.com/cavadosi/BettrUI/blob/main/packages/jsx/lib/Avatar/Avatar.tsx
     target: _blank
 ---
 
 ## Usage
 
 ::stack
-  ::div{class="p-4"}
-  ::alert{icon="lucide:info"}
-    A **default** alert with `code` and a [link](/).
-  ::
-
-  ::alert{type="secondary" icon="lucide:info"}
-    A **secondary** alert with `code` and a [link](/).
+  ::div{class=" flex items-center justify-center p-4"}
+  ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar"}
   ::
   ::
-  ```mdc
-  ::alert{icon="lucide:info"}
-    A **default** alert with `code` and a [link](/).
-  ::
-
-  ::alert{type="secondary" icon="lucide:info"}
-    A **secondary** alert with `code` and a [link](/).
-  ::
+  ```jsx
+  <>
+    <Avatar src="/user-avatar.png" alt="User avatar" />
+  </>
   ```
 ::
 
-### Link
-
-::stack
-  ::div{class="p-4"}
-  ::alert{to="https://github.com/ZTL-UwU/shadcn-docs-nuxt" target="_blank" icon="lucide:link"}
-    A **link** alert.
-  ::
-  ::
-  ```mdc
-  ::alert{to="https://github.com/ZTL-UwU/shadcn-docs-nuxt" target="_blank" icon="lucide:link"}
-    A **link** alert.
-  ::
-  ```
-::
-
-### Variants
+### Size
 
 ::tabs{variant="line"}
-  ::stack{label="info" icon="lucide:info"}
-    ::div{class="p-3"}
-    ::alert{type="info" icon="lucide:info"}
-      An **info** alert with `code` and a [link](/).
+  ::stack{label="Xs"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" size="xs"}
     ::
     ::
-    ```mdc
-    ::alert{type="info" icon="lucide:info"}
-      An **info** alert with `code` and a [link](/).
-    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" size="xs" />
+    </>
     ```
   ::
 
-  ::stack{label="note" icon="lucide:pencil"}
-    ::div{class="p-3"}
-    ::alert{type="note" icon="lucide:pencil"}
-      A **note** alert with `code` and a [link](/).
+  ::stack{label="Sm"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" size="sm"}
     ::
     ::
-    ```mdc
-    ::alert{type="note" icon="lucide:pencil"}
-      A **note** alert with `code` and a [link](/).
-    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" size="sm" />
+    </>
     ```
   ::
 
-  ::stack{label="success" icon="lucide:lightbulb"}
-    ::div{class="p-3"}
-    ::alert{type="success" icon="lucide:lightbulb"}
-      A **success** alert with `code` and a [link](/).
+  ::stack{label="Md"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" size="md"}
     ::
     ::
-    ```mdc
-    ::alert{type="success" icon="lucide:lightbulb"}
-      A **success** alert with `code` and a [link](/).
-    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" size="md" />
+    </>
     ```
   ::
 
-  ::stack{label="example" icon="lucide:test-tube"}
-    ::div{class="p-3"}
-    ::alert{type="example" icon="lucide:test-tube"}
-      An **example** alert with `code` and a [link](/).
+  ::stack{label="Lg"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" size="lg"}
     ::
     ::
-    ```mdc
-    ::alert{type="example" icon="lucide:test-tube"}
-      An **example** alert with `code` and a [link](/).
-    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" size="lg" />
+    </>
     ```
   ::
 
-  ::stack{label="warning" icon="lucide:triangle-alert"}
-    ::div{class="p-3"}
-    ::alert{type="warning" icon="lucide:triangle-alert"}
-      A **warning** alert with `code` and a [link](/).
+  ::stack{label="XL"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" size="xl"}
     ::
     ::
-    ```mdc
-    ::alert{type="warning" icon="lucide:triangle-alert"}
-      A **warning** alert with `code` and a [link](/).
-    ::
-    ```
-  ::
-
-  ::stack{label="danger" icon="lucide:circle-x"}
-    ::div{class="p-3"}
-    ::alert{type="danger" icon="lucide:circle-x"}
-      A **danger** alert with `code` and a [link](/).
-    ::
-    ::
-    ```mdc
-    ::alert{type="danger" icon="lucide:circle-x"}
-      A **danger** alert with `code` and a [link](/).
-    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" size="xl" />
+    </>
     ```
   ::
 ::
+### Rounded
 
-### Title
+::tabs{variant="line"}
+  ::stack{label="None"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" rounded="none"}
+    ::
+    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" rounded="none" />
+    </>
+    ```
+  ::
 
-::stack
-  ::div{class="p-4"}
-  ::alert{title="Title" icon="lucide:layout-list"}
-    An alert with a title.
+  ::stack{label="Sm"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" rounded="sm"}
+    ::
+    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" rounded="sm" />
+    </>
+    ```
   ::
+
+  ::stack{label="Md"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" rounded="md"}
+    ::
+    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" rounded="md" />
+    </>
+    ```
   ::
-  ```mdc
-  ::alert{title="Title" icon="lucide:layout-list"}
-    An alert with a title.
+
+  ::stack{label="Lg"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" rounded="lg"}
+    ::
+    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" rounded="lg" />
+    </>
+    ```
   ::
-  ```
+
+  ::stack{label="XL"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" rounded="xl"}
+    ::
+    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" rounded="xl" />
+    </>
+    ```
+  ::
+
+  ::stack{label="Full"}
+    ::div{class="flex items-center justify-center p-4"}
+    ::BtrAvatar{src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" rounded="full"}
+    ::
+    ::
+    ```jsx
+    <>
+      <Avatar src="/user-avatar.png" alt="User avatar" rounded="full" />
+    </>
+    ```
+  ::
 ::
 
 ## Props
 
 ::field-group
-  :field{name="title" type="string"}[Alert title]
-  :field{name="icon" type="string"}[Alert icon]
-  :field{name="type" type="'default' | 'info' | 'warning' | 'success' | 'danger' | 'secondary'" default-value="'default'"}
-  :field{name="to" type="string"}[Link URL]
-  :field{name="target" type="Target"}[A `target` attribute value to apply on the link]
-  :field{name="external" type="boolean"}[Alias to `target='_blank'`]
-  :field{name="showLinkIcon" type="boolean" default-value="true"}[Whether to show the link indicator :icon{name="lucide:arrow-up-right"}]
+  :field{name="src" type="string"}[Image source URL]
+  :field{name="alt" type="string"}[Alternative text for the image]
+  :field{name="rounded" type="'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full'" default-value="'md'"}[Avatar border radius]
+  :field{name="size" type="'xs' | 'sm' | 'md' | 'lg' | 'xl'" default-value="'md'"}[Avatar size]
 ::

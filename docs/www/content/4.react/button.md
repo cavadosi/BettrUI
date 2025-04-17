@@ -294,7 +294,21 @@ badges:
 ## Props
 
 ::field-group
-  :field{name="variant" type="'solid' | 'outline' | 'link' | 'soft' | 'ghost' | 'secondary'" default-value="'solid'"}
-  :field{name="rounded" type="'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full'" default-value="'md'"}
-  :field{name="size" type="'xs' | 'sm' | 'md' | 'lg' | 'xl'" default-value="'md'"}
+  :field{
+    name="variant"
+    type="'solid' | 'outline' | 'link' | 'soft' | 'ghost' | 'secondary'"
+    default-value="'solid'"
+  }[Visual style of the button.]
+
+  :field{
+    name="rounded"
+    type="'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full'"
+    default-value="'md'"
+  }[Controls the border radius of the button.]
+
+  :field{
+    name="size"
+    type="'xs' | 'sm' | 'md' | 'lg' | 'xl'"
+    default-value="'md'"
+  }[Controls the size of the button.]
 ::
