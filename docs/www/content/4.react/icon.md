@@ -15,7 +15,7 @@ badges:
   ::
   ```jsx
   <>
-    <Icon name="Home" class="size-8 text-primary-500" />
+    <Icon name="Home" className="size-8 text-primary-500" />
   </>
   ```
 ::
@@ -30,7 +30,7 @@ badges:
     ::
     ```jsx
     <>
-      <Icon variant="outline" name="Home" class="size-8" />
+      <Icon variant="outline" name="Home" className="size-8" />
     </>
     ```
   ::
@@ -42,7 +42,7 @@ badges:
     ::
     ```jsx
     <>
-      <Icon variant="solid" name="Home" class="size-8" />
+      <Icon variant="solid" name="Home" className="size-8" />
     </>
     ```
   ::
@@ -64,7 +64,7 @@ badges:
   }[Sets the style of the icon, either solid or outline.]
 
   :field{
-    name="class"
+    name="className"
     type="string"
   }[Additional Tailwind or custom classes to apply to the icon.]
 

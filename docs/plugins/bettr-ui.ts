@@ -1,4 +1,4 @@
-import { Avatar, Badge, Button, Checkbox, Icon, Skeleton, Toggle } from '@bettr-ui/vue';
+import { Avatar, Badge, Button, Checkbox, Icon, Skeleton, Textarea, Toggle } from '@bettr-ui/vue';
 
 export default defineNuxtPlugin((nuxtApp) => {
   // Register the component globally.
@@ -6,7 +6,8 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('BtrBadge', Badge);
   nuxtApp.vueApp.component('BtrButton', Button);
   nuxtApp.vueApp.component('BtrCheckbox', Checkbox);
-  nuxtApp.vueApp.component('BtrSkeleton', Skeleton);
   nuxtApp.vueApp.component('BtrIcon', Icon);
+  nuxtApp.vueApp.component('BtrSkeleton', Skeleton);
+  nuxtApp.vueApp.component('BtrTextarea', Textarea);
   nuxtApp.vueApp.component('BtrToggle', Toggle);
 });

@@ -15,7 +15,7 @@ badges:
   ::
   ```jsx
   <>
-    <Skeleton class="size-12" />
+    <Skeleton className="size-12" />
   </>
   ```
 ::
@@ -30,7 +30,7 @@ badges:
     ::
     ```jsx
     <>
-      <Skeleton rounded="none" class="size-12" />
+      <Skeleton rounded="none" className="size-12" />
     </>
     ```
   ::
@@ -42,7 +42,7 @@ badges:
     ::
     ```jsx
     <>
-      <Skeleton rounded="sm" class="size-12" />
+      <Skeleton rounded="sm" className="size-12" />
     </>
     ```
   ::
@@ -54,7 +54,7 @@ badges:
     ::
     ```jsx
     <>
-      <Skeleton rounded="md" class="size-12" />
+      <Skeleton rounded="md" className="size-12" />
     </>
     ```
   ::
@@ -66,7 +66,7 @@ badges:
     ::
     ```jsx
     <>
-      <Skeleton rounded="lg" class="size-12" />
+      <Skeleton rounded="lg" className="size-12" />
     </>
     ```
   ::
@@ -78,7 +78,7 @@ badges:
     ::
     ```jsx
     <>
-      <Skeleton rounded="xl" class="size-12" />
+      <Skeleton rounded="xl" className="size-12" />
     </>
     ```
   ::
@@ -90,7 +90,7 @@ badges:
     ::
     ```jsx
     <>
-      <Skeleton rounded="full" class="size-12" />
+      <Skeleton rounded="full" className="size-12" />
     </>
     ```
   ::
@@ -104,5 +104,10 @@ badges:
       type="'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full'"
       default-value="'md'"
     }[Controls the border radius of the skeleton.]
+  
+  :field{
+      name="className"
+      type="string"
+    }[Additional Tailwind or custom classes to apply to the skeleton.]
 ::
 
