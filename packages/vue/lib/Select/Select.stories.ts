@@ -1,6 +1,6 @@
-import SelectVue from "./Select.vue";
-import { ref } from "vue";
-import type { Meta, StoryFn } from "@storybook/vue3";
+import type { Meta, StoryObj } from '@storybook/vue3'
+import { ref } from 'vue'
+import Select from './Select.vue'
 
 const people = [
   { id: 1, value: "Wade Cooper" },
@@ -13,63 +13,90 @@ const people = [
   { id: 8, value: "Mason Heaney" },
   { id: 9, value: "Claudie Smitham" },
   { id: 10, value: "Emil Schaefer" },
-];
+]
 
-const meta: Meta<typeof SelectVue> = {
+const meta: Meta<typeof Select> = {
   title: "Vue/Select",
-  component: SelectVue,
+  component: Select,
   argTypes: {
     label: { control: "text" },
     items: { control: "object" },
-    icon: { control: "text" },
-    selectedIcon: { control: "text" },
-    className: { control: "text" },
+    icon: { 
+      control: "text",
+      description: "Icon name from Heroicons (without 'Icon' suffix)"
+    },
+    selectedIcon: { 
+      control: "text",
+      description: "Icon name from Heroicons (without 'Icon' suffix)" 
+    },
   },
-};
-export default meta;
+  args: {
+    items: people,
+    modelValue: people[0],
+  },
+}
 
-export const Default: StoryFn<typeof SelectVue> = (args) => ({
-  components: { SelectVue },
-  setup() {
-    const selected = ref(args.items[0]);
-    return { args, selected };
-  },
-  template: `
-    <SelectVue v-bind="args" v-model:selected="selected" />
-  `,
-});
-Default.args = {
-  items: people,
-};
+export default meta
 
-export const CustomLabel: StoryFn<typeof SelectVue> = (args) => ({
-  components: { SelectVue },
-  setup() {
-    const selected = ref(args.items[0]);
-    return { args, selected };
-  },
-  template: `
-    <SelectVue v-bind="args" v-model:selected="selected" />
-  `,
-});
-CustomLabel.args = {
-  label: "Select a user",
-  items: people,
-};
+type Story = StoryObj<typeof Select>
 
-export const CustomIcons: StoryFn<typeof SelectVue> = (args) => ({
-  components: { SelectVue },
-  setup() {
-    const selected = ref(args.items[0]);
-    return { args, selected };
+export const Default: Story = {
+  render: (args) => ({
+    components: { Select },
+    setup() {
+      const selected = ref(args.modelValue)
+      return { args, selected }
+    },
+    template: `
+      <Select
+        v-bind="args"
+        v-model="selected"
+        :items="args.items"
+      />
+    `,
+  })
+}
+
+export const CustomLabel: Story = {
+  args: {
+    label: "Select a user",
+    modelValue: people[0],
   },
-  template: `
-    <SelectVue v-bind="args" v-model:selected="selected" />
-  `,
-});
-CustomIcons.args = {
-  label: "Select a user",
-  icon: "ChevronDown",
-  selectedIcon: "CheckBadge",
-  items: people,
-};
+  render: (args) => ({
+    components: { Select },
+    setup() {
+      const selected = ref(args.modelValue)
+      return { args, selected }
+    },
+    template: `
+      <Select
+        v-bind="args"
+        v-model="selected"
+        :items="args.items"
+      />
+    `,
+  })
+}
+
+export const CustomIcons: Story = {
+  args: {
+    label: "Select a user",
+    icon: "ChevronDown",
+    selectedIcon: "CheckBadge",
+    modelValue: people[0],
+  },
+  render: (args) => ({
+    components: { Select },
+    setup() {
+      const selected = ref(args.modelValue)
+      return { args, selected }
+    },
+    template: `
+      <Select
+        v-bind="args"
+        v-model="selected"
+        :items="args.items"
+      />
+    `,
+  })
+}
