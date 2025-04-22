@@ -11,7 +11,7 @@ badges:
 ::tabs{variant="line"}
   ::stack{label="Default"}
     ::div{class="flex items-center justify-center p-4"}
-    ::BtrToggle{:modelValue="false" v-model="enabled"}
+    ::BtrToggle{v-model="false"}
     ::
     ::
     ```vue
@@ -22,14 +22,14 @@ badges:
     </script>
 
     <template>
-      <Toggle :modelValue="enabled" v-model="enabled" />
+      <Toggle v-model="enabled" />
     </template>
     ```
   ::
   
   ::stack{label="With Icons"}
     ::div{class="flex items-center justify-center p-4"}
-    ::BtrToggle{:modelValue="false" v-model="enabled" activeIcon="Sun" inactiveIcon="Moon"}
+    ::BtrToggle{v-model="enabled" activeIcon="Sun" inactiveIcon="Moon"}
     ::
     ::
     ```vue
@@ -52,7 +52,7 @@ badges:
 
   ::stack{label="With Label"}
     ::div{class="flex items-center justify-center p-4"}
-    ::BtrToggle{:modelValue="false" v-model="enabled" label="Enable notifications" description="Receive updates and alerts"}
+    ::BtrToggle{v-model="enabled" label="Enable notifications" description="Receive updates and alerts"}
     ::
     ::
     ```vue
@@ -75,7 +75,7 @@ badges:
   
   ::stack{label="Disabled"}
     ::div{class="flex items-center justify-center p-4"}
-    ::BtrToggle{:modelValue="false" v-model="enabled" disabled}
+    ::BtrToggle{v-model="enabled" disabled}
     ::
     ::
     ```vue
