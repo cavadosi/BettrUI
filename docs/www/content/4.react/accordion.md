@@ -80,7 +80,7 @@ badges:
     name="openIcon"
     type="string"
     default="ChevronUp"
-  }[The name of the icon (e.g., from Lucide) that will be displayed when a panel is open.]
+  }[The name of the icon (e.g., from Heroicons) that will be displayed when a panel is open.]
 
   :field{
     name="closedIcon"

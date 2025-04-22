@@ -2,7 +2,7 @@
 badges:
   - value: Source
     icon: lucide:code
-    to: https://github.com/cavadosi/BettrUI/blob/main/packages/vue/lib/Checkbox/Checkbox.vue
+    to: https://github.com/cavadosi/BettrUI/blob/main/packages/vue/lib/Accordion/Accordion.vue
     target: _blank
 ---
 
@@ -86,7 +86,7 @@ badges:
     name="openIcon"
     type="string"
     default="ChevronUp"
-  }[The name of the icon (e.g., from Lucide) that will be displayed when a panel is open.]
+  }[The name of the icon (e.g., from Heroicons) that will be displayed when a panel is open.]
 
   :field{
     name="closedIcon"
