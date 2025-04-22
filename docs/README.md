@@ -1,49 +1,79 @@
-# shadcn-docs-nuxt Minimal Starter
+![hero](https://github.com/user-attachments/assets/f954ed2a-c504-40c2-9e84-4ae4ed31e793)
 
-Starter template for [shadcn-docs-nuxt](https://github.com/ZTL-UwU/shadcn-docs-nuxt).
+# shadcn-docs-nuxt
 
-## Setup
+[![built with nuxt][nuxt-src]][nuxt-href]
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
+[![sponsor][sponsor-src]][sponsor-href]
 
-Make sure to install the dependencies:
+Beautifully designed _Nuxt Content_ template built with _shadcn-vue_. **Customizable. Compatible. Open Source.**
 
-```bash
-# yarn
-yarn install
+📖 [Documentation / Demo](https://shadcn-docs-nuxt.vercel.app/)
 
-# npm
-npm install
+💬 [Discord](https://discord.gg/9P5HzAz8DT)
 
-# pnpm
-pnpm install
+## Quick Start
 
-# bun
-bun install
-```
+1. Create a project with the [starter template](https://github.com/ZTL-UwU/shadcn-docs-nuxt-starter)
 
-## Development Server
+  ```bash
+  npx nuxi@latest init -t github:ZTL-UwU/shadcn-docs-nuxt-starter
+  ```
 
-Start the development server on http://localhost:3000
+2. Navigating to the Project Directory
 
-```bash
-npm run dev
-```
+  ```bash
+  cd [project-name]
+  ```
 
-## Production
+3. Start dev server
 
-[![Deploy to NuxtHub](https://hub.nuxt.com/button.svg)](https://hub.nuxt.com/new?repo=ZTL-UwU/shadcn-docs-nuxt-starter)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FZTL-UwU%2Fshadcn-docs-nuxt-starter)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2FZTL-UwU%2Fshadcn-docs-nuxt-starter)
+  ```bash
+  npm run dev
+  ```
 
-Build the application for production:
+## Contributing
 
-```bash
-npm run build
-```
+1. Clone this repository.
+2. Install dependencies `pnpm install`.
+3. Use `pnpm run dev` to start dev server.
+4. Before committing, run `pnpm run lint:fix` and `pnpm run typecheck`.
 
-Locally preview production build:
+## Credits
 
-```bash
-npm run preview
-```
+- [Nuxt Content](https://content.nuxt.com/): Content made easy for Vue Developers.
+- [shadcn-ui](https://ui.shadcn.com/): For the beautiful component & docs design.
+- [shadcn-vue](https://www.shadcn-vue.com/): For the vue port of shadcn-ui & some docs component source.
+- [Docus](https://docus.dev/): For the inspiration & some docs component source.
+- [Nuxt UI Pro Docs](https://docs-template.nuxt.dev/): For the inspiration.
 
-Checkout the [deployment documentation](https://shadcn-docs-nuxt.vercel.app/getting-started/deployment) for more information.
+## Who's Using
+
+- [unovue/inspira-ui](https://github.com/unovue/inspira-ui) 1.9K ⭐️
+- [unjs/magic-regexp](https://github.com/unjs/magic-regexp) 4K ⭐️
+- [nuxt-monaco-editor](https://github.com/e-chan1007/nuxt-monaco-editor)
+- [nuxt-umami](https://github.com/ijkml/nuxt-umami)
+- [Msty](https://docs.msty.app/getting-started/onboarding)
+- [Archiver](https://github.com/Ast3risk-ops/archiver)
+- [Add your project 🚀](https://github.com/ZTL-UwU/shadcn-docs-nuxt/edit/main/README.md)
+
+## License
+
+[MIT](https://github.com/ZTL-UwU/shadcn-docs-nuxt/blob/main/LICENSE)
+
+---
+
+<a href='https://ko-fi.com/T6T7R1M58' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+[npm-version-src]: https://img.shields.io/npm/v/shadcn-docs-nuxt?style=flat&colorA=18181b&colorB=18181b
+[npm-version-href]: https://npmjs.com/package/shadcn-docs-nuxt
+[npm-downloads-src]: https://img.shields.io/npm/dm/shadcn-docs-nuxt?style=flat&colorA=18181b&colorB=18181b
+[npm-downloads-href]: https://npm.chart.dev/shadcn-docs-nuxt?primary=neutral&gray=zinc&theme=light
+[license-src]: https://img.shields.io/github/license/ZTL-UwU/shadcn-docs-nuxt.svg?style=flat&colorA=18181b&colorB=18181b
+[license-href]: https://github.com/ZTL-UwU/shadcn-docs-nuxt/blob/main/LICENSE
+[nuxt-src]: https://img.shields.io/badge/Built%20With%20Nuxt-18181B?logo=nuxt
+[nuxt-href]: https://nuxt.com/
+[sponsor-src]: https://img.shields.io/badge/sponsor%20me-18181B?logo=kofi
+[sponsor-href]: https://ko-fi.com/ztl_uwu
