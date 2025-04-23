@@ -1,5 +1,5 @@
 {
-  "name": "shadcn-docs-nuxt",
+  "name": "better-ui-docs",
   "type": "module",
   "version": "0.8.21",
   "packageManager": "pnpm@10.8.0",
@@ -46,7 +46,7 @@
     "taze": "taze"
   },
   "dependencies": {
-    "@bettr-ui/vue": "^0.1.0",
+    "@bettr-ui/vue": "^0.1.1",
     "@heroicons/vue": "^2.2.0",
     "@iconify-json/lucide": "^1.2.35",
     "@iconify-json/vscode-icons": "^1.2.19",

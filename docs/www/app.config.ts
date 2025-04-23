@@ -15,6 +15,9 @@ export default defineAppConfig({
       title: "BettrUI",
       showTitle: true,
       darkModeToggle: true,
+      languageSwitcher: {
+        enabled: false
+      },
       logo: {
         light: "/logo.png",
         dark: "/logo.png",
@@ -95,7 +98,7 @@ export default defineAppConfig({
       codeCopyIcon: 'lucide:clipboard',
       editLink: {
         enable: true,
-        pattern: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/edit/main/content/:path',
+        pattern: 'https://github.com/cavadosi/BettrUI/edit/main/docs/www/content/:path',
         text: 'Edit this page',
         icon: 'lucide:square-pen',
         placement: ['docsFooter'],
