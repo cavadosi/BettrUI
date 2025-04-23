@@ -1,10 +1,12 @@
 {
   "name": "@bettr-ui/vue",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "type": "module",
   "files": [
     "dist"
   ],
+  "main": "./dist/bettr-ui-vue.umd.cjs",
+  "module": "./dist/bettr-ui-vue.js",
   "exports": {
   ".": {
     "import": "./dist/bettr-ui-vue.js",

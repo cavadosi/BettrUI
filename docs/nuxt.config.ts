@@ -41,7 +41,6 @@ export default defineNuxtConfig({
     disableTransition: true,
   },
   css: [
-    '@bettr-ui/vue/css',
     join(currentDir, './assets/css/themes.css'),
     '~/assets/css/tailwind.css',
   ],
@@ -92,15 +91,6 @@ export default defineNuxtConfig({
     transpile: ['shiki', 'ohash'],
   },
   vite: {
-    resolve: {
-      alias: {
-        // map the logical import to the actual file on disk
-        '@bettr-ui/vue/css': resolve(
-          currentDir,
-          'node_modules/@bettr-ui/vue/dist/bettr-ui-vue.css',
-        ),
-      },
-    },
     build: {
       cssMinify: 'lightningcss',
     },
