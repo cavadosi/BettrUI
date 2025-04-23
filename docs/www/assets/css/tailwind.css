@@ -1,4 +1,4 @@
-@import '../../node_modules/@bettr-ui/vue/dist/bettr-ui-vue.css';
+/* @import '../../node_modules/@bettr-ui/vue/dist/bettr-ui-vue.css'; */
 @import 'tailwindcss';
 
 @config '../../tailwind.config.js';
