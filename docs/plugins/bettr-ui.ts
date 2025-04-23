@@ -18,6 +18,8 @@ import {
   Toggle,
 } from '@bettr-ui/vue';
 
+// import '@bettr-ui/vue/styles';
+
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('BtrAccordion', Accordion);
   nuxtApp.vueApp.component('BtrAvatar', Avatar);

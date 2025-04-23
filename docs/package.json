@@ -46,7 +46,7 @@
     "taze": "taze"
   },
   "dependencies": {
-    "@bettr-ui/vue": "^0.0.9",
+    "@bettr-ui/vue": "^0.0.10",
     "@heroicons/vue": "^2.2.0",
     "@iconify-json/lucide": "^1.2.35",
     "@iconify-json/vscode-icons": "^1.2.19",
