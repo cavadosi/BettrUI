@@ -8,8 +8,6 @@ badges:
 
 ## Usage
 
-This component uses any icon from [Heroicons](https://heroicons.com).
-
 ::stack{label="Default"}
   ::div{class=" flex items-center justify-center p-4"}
   ::BtrIcon{class="size-8 text-primary-500" name="Home"} 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {
-  Combobox as HeadlessCombobox,
+  Combobox,
   ComboboxButton,
   ComboboxInput,
   ComboboxOption,
@@ -54,7 +54,7 @@ function handleChange(item: Item | null) {
 </script>
 
 <template>
-  <HeadlessCombobox as="div" :model-value="selected" @update:modelValue="handleChange">
+  <Combobox as="div" :model-value="selected" @update:modelValue="handleChange">
     <label class="block text-sm font-medium text-secondary-900 dark:text-secondary-50">
       {{ props.label }}
     </label>
@@ -98,5 +98,5 @@ function handleChange(item: Item | null) {
         </ComboboxOption>
       </ComboboxOptions>
     </div>
-  </HeadlessCombobox>
+  </Combobox>
 </template>
