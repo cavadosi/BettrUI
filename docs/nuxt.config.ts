@@ -1,4 +1,4 @@
-import { dirname, join } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -92,6 +92,15 @@ export default defineNuxtConfig({
     transpile: ['shiki', 'ohash'],
   },
   vite: {
+    resolve: {
+      alias: {
+        // map the logical import to the actual file on disk
+        '@bettr-ui/vue/css': resolve(
+          currentDir,
+          'node_modules/@bettr-ui/vue/dist/bettr-ui-vue.css',
+        ),
+      },
+    },
     build: {
       cssMinify: 'lightningcss',
     },
