@@ -1,5 +1,5 @@
 {
-  "name": "bettr-ui",
+  "name": "bettr-ui-docs",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@10.8.0",

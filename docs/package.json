@@ -1,5 +1,5 @@
 {
-  "name": "shadcn-docs-nuxt",
+  "name": "docs",
   "type": "module",
   "version": "0.8.21",
   "packageManager": "pnpm@10.8.0",
