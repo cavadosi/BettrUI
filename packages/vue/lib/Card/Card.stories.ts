@@ -1,47 +1,52 @@
-import type { Meta, StoryObj } from "@storybook/vue3";
-import Card from "./Card.vue";
+import type { Meta, StoryObj } from '@storybook/vue3';
+import Card from './Card.vue';
 
 const meta: Meta<typeof Card> = {
-  title: "Vue/Card",
+  title: 'Vue/Card',
   component: Card,
   argTypes: {
     rounded: {
-      control: { type: "select" },
-      options: ["none", "sm", "md", "lg", "xl"],
+      control: { type: 'select' },
+      options: ['none', 'sm', 'md', 'lg', 'xl'],
     },
   },
 };
 
 export default meta;
-
 type Story = StoryObj<typeof Card>;
 
 export const Default: Story = {
   args: {
-    rounded: "md",
+    rounded: 'md',
   },
   render: (args) => ({
     components: { Card },
-    setup() {
-      return { args };
-    },
-    template: `<Card v-bind="args" class="p-4 w-96">Main content of the card goes here.</Card>`,
+    setup: () => ({ args }),
+    template: `
+      <Card v-bind="args">
+        <template #content>
+          Main content of the card goes here.
+        </template>
+      </Card>
+    `,
   }),
 };
 
 export const WithHeader: Story = {
   args: {
-    rounded: "md",
+    rounded: 'md',
   },
   render: (args) => ({
     components: { Card },
-    setup() {
-      return { args };
-    },
+    setup: () => ({ args }),
     template: `
-      <Card v-bind="args" class="w-96">
-        <div class="p-4 border-b">Card Header</div>
-        <div class="p-4">Main content of the card goes here.</div>
+      <Card v-bind="args">
+        <template #header>
+          Card Header
+        </template>
+        <template #content>
+          Main content of the card goes here.
+        </template>
       </Card>
     `,
   }),
@@ -49,18 +54,22 @@ export const WithHeader: Story = {
 
 export const WithHeaderAndFooter: Story = {
   args: {
-    rounded: "md",
+    rounded: 'md',
   },
   render: (args) => ({
     components: { Card },
-    setup() {
-      return { args };
-    },
+    setup: () => ({ args }),
     template: `
-      <Card v-bind="args" class="w-96">
-        <div class="p-4 border-b">Card Header</div>
-        <div class="p-4">Main content of the card goes here.</div>
-        <div class="p-4 border-b">Card Footer</div>
+      <Card v-bind="args">
+        <template #header>
+          Card Header
+        </template>
+        <template #content>
+          Main content of the card goes here.
+        </template>
+        <template #footer>
+          Card Footer
+        </template>
       </Card>
     `,
   }),

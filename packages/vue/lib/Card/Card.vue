@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { cva } from "class-variance-authority";
-import { twMerge } from 'tailwind-merge'
+import { twMerge } from "tailwind-merge";
 
-const CardVariants = cva(
-  "divide-y divide-secondary-200 overflow-hidden rounded-lg bg-secondary-50 shadow-sm",
+const cardVariants = cva(
+  "divide-y divide-secondary-200 overflow-hidden bg-secondary-50 shadow-sm",
   {
     variants: {
       rounded: {
@@ -17,7 +17,7 @@ const CardVariants = cva(
     defaultVariants: {
       rounded: "md",
     },
-  }
+  },
 );
 
 const props = defineProps<{
@@ -25,8 +25,19 @@ const props = defineProps<{
   class?: string;
 }>();
 </script>
+
 <template>
-    <div :class="twMerge(CardVariants({ rounded: props.rounded }), props.class)">
-      <slot />
+  <div :class="twMerge(cardVariants({ rounded: props.rounded }), props.class)">
+    <div v-if="$slots.header" class="px-4 py-5 sm:px-6">
+      <slot name="header" />
     </div>
-  </template>
+
+    <div v-if="$slots.content" class="px-4 py-5 sm:p-6">
+      <slot name="content" />
+    </div>
+
+    <div v-if="$slots.footer" class="px-4 py-4 sm:p-6">
+      <slot name="footer" />
+    </div>
+  </div>
+</template>
