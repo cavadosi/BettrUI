@@ -41,6 +41,7 @@ export default defineNuxtConfig({
     disableTransition: true,
   },
   css: [
+    '@bettr-ui/vue/css',
     join(currentDir, './assets/css/themes.css'),
     '~/assets/css/tailwind.css',
   ],

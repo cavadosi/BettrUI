@@ -1,4 +1,3 @@
-@import '@bettr-ui/vue/css';
 @import 'tailwindcss';
 
 @config '../../tailwind.config.js';
