@@ -1,4 +1,4 @@
-/* @import '../../node_modules/@bettr-ui/vue/dist/bettr-ui-vue.css'; */
+@import '@bettr-ui/vue/css';
 @import 'tailwindcss';
 
 @config '../../tailwind.config.js';
@@ -32,30 +32,31 @@
 }
 
 @theme {
-  --color-primary-50: oklch(0.962 0.018 272.4);
-  --color-primary-100: oklch(0.884 0.056 274.2);
-  --color-primary-200: oklch(0.809 0.096 274.9);
-  --color-primary-300: oklch(0.732 0.14 276.1);
-  --color-primary-400: oklch(0.657 0.184 276.7);
-  --color-primary-500: oklch(0.582 0.232 277.2);
-  --color-primary-600: oklch(0.516 0.203 277.8);
-  --color-primary-700: oklch(0.451 0.175 278.3);
-  --color-primary-800: oklch(0.387 0.146 279.1);
-  --color-primary-900: oklch(0.322 0.118 279.4);
-  --color-primary-950: oklch(0.256 0.091 280.5);
+  --color-primary-50: oklch(0.98 0.02 60);
+  --color-primary-100: oklch(0.94 0.05 60);
+  --color-primary-200: oklch(0.88 0.09 60);
+  --color-primary-300: oklch(0.81 0.13 60);
+  --color-primary-400: oklch(0.73 0.17 60);
+  --color-primary-500: oklch(0.65 0.21 60);
+  --color-primary-600: oklch(0.58 0.19 60);
+  --color-primary-700: oklch(0.50 0.16 60);
+  --color-primary-800: oklch(0.42 0.13 60);
+  --color-primary-900: oklch(0.35 0.10 60);
+  --color-primary-950: oklch(0.28 0.07 60);
 
-  --color-secondary-50: oklch(0.963 0.003 247.8);
-  --color-secondary-100: oklch(0.88 0.013 255.5);
-  --color-secondary-200: oklch(0.799 0.021 257.5);
-  --color-secondary-300: oklch(0.717 0.029 255.1);
-  --color-secondary-400: oklch(0.636 0.037 257.9);
-  --color-secondary-500: oklch(0.554 0.046 257.5);
-  --color-secondary-600: oklch(0.496 0.04 257.9);
-  --color-secondary-700: oklch(0.436 0.035 259.5);
-  --color-secondary-800: oklch(0.376 0.029 258.4);
-  --color-secondary-900: oklch(0.316 0.024 261.2);
-  --color-secondary-950: oklch(0.258 0.017 255.7);
+  --color-secondary-50: oklch(0.98 0.01 75);
+  --color-secondary-100: oklch(0.94 0.03 75);
+  --color-secondary-200: oklch(0.88 0.05 75);
+  --color-secondary-300: oklch(0.81 0.08 75);
+  --color-secondary-400: oklch(0.73 0.11 75);
+  --color-secondary-500: oklch(0.65 0.14 75);
+  --color-secondary-600: oklch(0.58 0.13 75);
+  --color-secondary-700: oklch(0.50 0.11 75);
+  --color-secondary-800: oklch(0.42 0.09 75);
+  --color-secondary-900: oklch(0.35 0.07 75);
+  --color-secondary-950: oklch(0.28 0.05 75);
 }
+
 
 
 @layer base {

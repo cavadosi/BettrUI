@@ -1,19 +1,21 @@
 {
   "name": "@bettr-ui/vue",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/bettr-ui-vue.umd.cjs",
-  "module": "./dist/bettr-ui-vue.js",
   "exports": {
-    ".": {
-      "import": "./dist/bettr-ui-vue.js",
-      "require": "./dist/bettr-ui-vue.umd.cjs"
-    },
-    "./styles": "./dist/bettr-ui-vue.css"
+  ".": {
+    "import": "./dist/bettr-ui-vue.js",
+    "require": "./dist/bettr-ui-vue.umd.cjs",
+    "default": "./dist/bettr-ui-vue.js"
   },
+  "./css": {
+    "default": "./dist/bettr-ui-vue.css"
+  }
+},
+
   "scripts": {
     "dev": "vite",
     "prebuild": "rm -rf dist",
