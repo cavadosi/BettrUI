@@ -44,7 +44,7 @@ const ButtonVariants = cva(
 
 
 const props = defineProps<{
-  variant?: "solid" | "link" | "outline" | "soft" | "ghost";
+  variant?: "solid" | "link" | "outline" | "soft" | "ghost" | "secondary";
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   rounded?: "none" | "sm" | "md" | "lg" | "xl" | "full";
   class?: string;
