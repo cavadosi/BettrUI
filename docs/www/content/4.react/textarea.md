@@ -17,7 +17,7 @@ badges:
      ```jsx
     import { useState } from 'react';
 
-    function App() {
+    function Example() {
       const [feedback, setFeedback] = useState('');
 
       const handleChange = (e) => {
