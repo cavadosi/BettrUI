@@ -11,7 +11,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@bettr-ui/vue": "^0.0.12",
+    "@bettr-ui/vue": "^0.0.13",
     "@heroicons/vue": "^2.2.0",
     "@iconify-json/simple-icons": "^1.2.31",
     "nuxt": "^3.16.0",
