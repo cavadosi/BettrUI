@@ -1,14 +1,13 @@
-import { Avatar, Badge, Button, Checkbox, Container, Icon, Skeleton, Textarea, Toggle } from '@bettr-ui/vue';
+import * as BettrUI from '@bettr-ui/vue';
 
 export default defineNuxtPlugin((nuxtApp) => {
-  // Register the component globally.
-  nuxtApp.vueApp.component('BtrAvatar', Avatar);
-  nuxtApp.vueApp.component('BtrBadge', Badge);
-  nuxtApp.vueApp.component('BtrButton', Button);
-  nuxtApp.vueApp.component('BtrCheckbox', Checkbox);
-  nuxtApp.vueApp.component('BtrContainer', Container);
-  nuxtApp.vueApp.component('BtrIcon', Icon);
-  nuxtApp.vueApp.component('BtrSkeleton', Skeleton);
-  nuxtApp.vueApp.component('BtrTextarea', Textarea);
-  nuxtApp.vueApp.component('BtrToggle', Toggle);
+  nuxtApp.vueApp.component('BtrAvatar', BettrUI.Avatar);
+  nuxtApp.vueApp.component('BtrBadge', BettrUI.Badge);
+  nuxtApp.vueApp.component('BtrButton', BettrUI.Button);
+  nuxtApp.vueApp.component('BtrCheckbox', BettrUI.Checkbox);
+  nuxtApp.vueApp.component('BtrContainer', BettrUI.Container);
+  nuxtApp.vueApp.component('BtrIcon', BettrUI.Icon);
+  nuxtApp.vueApp.component('BtrSkeleton', BettrUI.Skeleton);
+  nuxtApp.vueApp.component('BtrTextarea', BettrUI.Textarea);
+  nuxtApp.vueApp.component('BtrToggle', BettrUI.Toggle);
 });
