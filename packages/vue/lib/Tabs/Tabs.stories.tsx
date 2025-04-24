@@ -11,8 +11,8 @@ const meta: Meta<typeof Tabs> = {
     },
     iconVariant: {
       control: "select",
-      options: ["outline", "solid"]
-    }
+      options: ["outline", "solid"],
+    },
   },
 };
 
@@ -53,7 +53,11 @@ const render = (args: any) => ({
 
 export const Default: Story = {
   args: {
-    items: [{ label: "Home", slot: "home" as const }, { label: "Profile", slot: "profile" as const }, { label: "Settings",slot: "settings" as const }],
+    items: [
+      { label: "Home", slot: "home" as const },
+      { label: "Profile", slot: "profile" as const },
+      { label: "Settings", slot: "settings" as const },
+    ],
   },
   render,
 };
@@ -65,7 +69,7 @@ export const WithIcons: Story = {
       { label: "Profile", slot: "profile" as const, icon: "User" },
       { label: "Settings", slot: "settings" as const, icon: "Cog" },
     ],
-    iconVariant: "outline"
+    iconVariant: "outline",
   },
   render,
 };

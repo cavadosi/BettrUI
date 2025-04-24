@@ -10,6 +10,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('BtrContainer', BettrUI.Container);
   nuxtApp.vueApp.component('BtrIcon', BettrUI.Icon);
   nuxtApp.vueApp.component('BtrSkeleton', BettrUI.Skeleton);
+  nuxtApp.vueApp.component('BtrTabs', BettrUI.Tabs);
   nuxtApp.vueApp.component('BtrTextarea', BettrUI.Textarea);
   nuxtApp.vueApp.component('BtrToggle', BettrUI.Toggle);
 });
