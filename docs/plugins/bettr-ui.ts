@@ -9,6 +9,8 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('BtrCheckbox', BettrUI.Checkbox);
   nuxtApp.vueApp.component('BtrContainer', BettrUI.Container);
   nuxtApp.vueApp.component('BtrIcon', BettrUI.Icon);
+  nuxtApp.vueApp.component('BtrInput', BettrUI.Input);
+  nuxtApp.vueApp.component('BtrModal', BettrUI.Modal);
   nuxtApp.vueApp.component('BtrSkeleton', BettrUI.Skeleton);
   nuxtApp.vueApp.component('BtrTabs', BettrUI.Tabs);
   nuxtApp.vueApp.component('BtrTextarea', BettrUI.Textarea);
