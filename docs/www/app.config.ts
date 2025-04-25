@@ -134,7 +134,7 @@ export default defineAppConfig({
         'mjs': 'vscode-icons:file-type-js',
         'cjs': 'vscode-icons:file-type-js',
         'js': 'vscode-icons:file-type-js',
-        'jsx': 'vscode-icons:file-type-js',
+        'jsx': 'vscode-icons:file-type-reactjs',
         'md': 'vscode-icons:file-type-markdown',
         'mdc': 'vscode-icons:file-type-markdown',
         'css': 'vscode-icons:file-type-css',
