@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/vue3';
-import Dropdown from './Dropdown.vue';
+import { Meta, StoryObj } from '@storybook/vue3'
+import Dropdown from './Dropdown.vue'
 
 const meta: Meta<typeof Dropdown> = {
   title: 'Vue/Dropdown',
@@ -28,11 +28,20 @@ const meta: Meta<typeof Dropdown> = {
         options: ['none', 'sm', 'md', 'lg', 'xl', 'full'],
       },
     },
+    placement: {
+      control: {
+        type: 'radio',
+        options: ['top', 'bottom', 'left', 'right', 'top-start', 'top-end', 'bottom-start', 'bottom-end', 'right-start'],
+      },
+    },
+    offset: { control: 'number' },
+    className: { control: 'text' },
   },
-};
+}
 
-export default meta;
-type Story = StoryObj<typeof Dropdown>;
+export default meta
+
+type Story = StoryObj<typeof Dropdown>
 
 export const Default: Story = {
   args: {
@@ -50,7 +59,7 @@ export const Default: Story = {
     buttonSize: 'sm',
     buttonRounded: 'md',
   },
-};
+}
 
 export const WithIcons: Story = {
   args: {
@@ -59,9 +68,24 @@ export const WithIcons: Story = {
     sections: [
       {
         items: [
-          { id: 1, label: 'Profile', icon: 'User', onClick: () => alert('Profile clicked') },
-          { id: 2, label: 'Settings', icon: 'Cog', onClick: () => alert('Settings clicked') },
-          { id: 3, label: 'Logout', icon: 'Logout', onClick: () => alert('Logout clicked') },
+          {
+            id: 1,
+            label: 'Profile',
+            icon: 'User',
+            onClick: () => alert('Profile clicked'),
+          },
+          {
+            id: 2,
+            label: 'Settings',
+            icon: 'Cog',
+            onClick: () => alert('Settings clicked'),
+          },
+          {
+            id: 3,
+            label: 'Logout',
+            icon: 'Logout',
+            onClick: () => alert('Logout clicked'),
+          },
         ],
       },
     ],
@@ -69,7 +93,7 @@ export const WithIcons: Story = {
     buttonSize: 'md',
     buttonRounded: 'lg',
   },
-};
+}
 
 export const MultiSection: Story = {
   args: {
@@ -79,13 +103,28 @@ export const MultiSection: Story = {
     sections: [
       {
         items: [
-          { id: 1, label: 'Account', icon: 'User', onClick: () => alert('Account clicked') },
-          { id: 2, label: 'Preferences', icon: 'Cog', onClick: () => alert('Preferences clicked') },
+          {
+            id: 1,
+            label: 'Account',
+            icon: 'User',
+            onClick: () => alert('Account clicked'),
+          },
+          {
+            id: 2,
+            label: 'Preferences',
+            icon: 'Cog',
+            onClick: () => alert('Preferences clicked'),
+          },
         ],
       },
       {
         items: [
-          { id: 3, label: 'Logout', icon: 'Logout', onClick: () => alert('Logout clicked') },
+          {
+            id: 3,
+            label: 'Logout',
+            icon: 'Logout',
+            onClick: () => alert('Logout clicked'),
+          },
         ],
       },
     ],
@@ -93,7 +132,7 @@ export const MultiSection: Story = {
     buttonSize: 'lg',
     buttonRounded: 'xl',
   },
-};
+}
 
 export const WithOffset: Story = {
   args: {
@@ -109,9 +148,9 @@ export const WithOffset: Story = {
     ],
     placement: 'right-start',
     offset: 10,
-    class: 'px-20 pt-10',
+    className: 'px-20 pt-10',
     buttonVariant: 'soft',
     buttonSize: 'xs',
     buttonRounded: 'none',
   },
-};
+}
