@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
-import { ref, watch, nextTick, onMounted } from 'vue';
-import { createPopper, Instance } from '@popperjs/core';
-import Button from '../Button/Button.vue';
-import Icon from '../Icon/Icon.vue';
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
+import { ref, watch, nextTick, onMounted } from "vue";
+import { createPopper, Instance } from "@popperjs/core";
+import Button from "../Button/Button.vue";
+import Icon from "../Icon/Icon.vue";
 
 interface DropdownItem {
   id: number;
@@ -16,12 +16,22 @@ interface DropdownSection {
   items: DropdownItem[];
 }
 
-type Placement = 
-  | 'auto' | 'auto-start' | 'auto-end'
-  | 'top' | 'top-start' | 'top-end'
-  | 'bottom' | 'bottom-start' | 'bottom-end'
-  | 'right' | 'right-start' | 'right-end'
-  | 'left' | 'left-start' | 'left-end';
+type Placement =
+  | "auto"
+  | "auto-start"
+  | "auto-end"
+  | "top"
+  | "top-start"
+  | "top-end"
+  | "bottom"
+  | "bottom-start"
+  | "bottom-end"
+  | "right"
+  | "right-start"
+  | "right-end"
+  | "left"
+  | "left-start"
+  | "left-end";
 
 interface Props {
   label: string;
@@ -29,21 +39,20 @@ interface Props {
   icon?: string;
   headerTitle?: string;
   headerDescription?: string;
-  className?: string;
   placement?: Placement;
   offset?: number;
-  buttonVariant?: 'solid' | 'link' | 'outline' | 'soft' | 'ghost' | 'secondary';
-  buttonSize?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-  buttonRounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+  buttonVariant?: "solid" | "link" | "outline" | "soft" | "ghost" | "secondary";
+  buttonSize?: "xs" | "sm" | "md" | "lg" | "xl";
+  buttonRounded?: "none" | "sm" | "md" | "lg" | "xl" | "full";
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  icon: 'ChevronDown',
-  placement: 'bottom-end',
+  icon: "ChevronDown",
+  placement: "bottom-end",
   offset: 0,
-  buttonVariant: 'secondary',
-  buttonSize: 'sm',
-  buttonRounded: 'md',
+  buttonVariant: "secondary",
+  buttonSize: "sm",
+  buttonRounded: "md",
 });
 
 const referenceElement = ref<HTMLElement | null>(null);
@@ -59,14 +68,24 @@ const createOrUpdatePopper = () => {
   }
 
   if (referenceElement.value && popperElement.value) {
-    popperInstance.value = createPopper(referenceElement.value, popperElement.value, {
-      placement: props.placement,
-      modifiers: [
-        { name: 'offset', options: { offset: [0, props.offset || 0] } },
-        { name: 'preventOverflow', options: { boundary: 'clippingParents', padding: 8 } },
-        { name: 'flip', options: { fallbackPlacements: ['top-end', 'bottom-end'] } },
-      ],
-    });
+    popperInstance.value = createPopper(
+      referenceElement.value,
+      popperElement.value,
+      {
+        placement: props.placement,
+        modifiers: [
+          { name: "offset", options: { offset: [0, props.offset || 0] } },
+          {
+            name: "preventOverflow",
+            options: { boundary: "clippingParents", padding: 8 },
+          },
+          {
+            name: "flip",
+            options: { fallbackPlacements: ["top-end", "bottom-end"] },
+          },
+        ],
+      },
+    );
 
     popperStyles.value = popperElement.value.style;
     popperAttributes.value = popperElement.value.attributes;
@@ -87,7 +106,7 @@ watch(
 );
 </script>
 <template>
-  <Menu as="div" :class="['relative inline-block text-left', className]">
+  <Menu as="div" class="relative inline-block text-left">
     <div ref="referenceElement">
       <MenuButton>
         <Button
@@ -109,27 +128,40 @@ watch(
     <MenuItems
       ref="popperElement"
       :style="popperStyles"
-      class="z-10 mt-2 w-56 origin-top-right divide-y divide-secondary-100 dark:divide-secondary-700 rounded-md bg-white dark:bg-secondary-950 ring-1 shadow-lg ring-secondary-950/5 dark:ring-secondary-50/20 transition focus:outline-hidden"
+      class="z-10 mt-2 w-56 origin-top-right divide-y divide-secondary-100 dark:divide-secondary-700 rounded-md bg-background-light dark:bg-background-dark ring-1 shadow-lg ring-secondary-950/5 dark:ring-secondary-50/20 transition focus:outline-hidden"
       v-bind="popperAttributes"
     >
       <div v-if="headerTitle" class="px-4 py-3">
-        <p class="text-sm font-medium text-secondary-900 dark:text-secondary-100">
+        <p
+          class="text-sm font-medium text-secondary-900 dark:text-secondary-100"
+        >
           {{ headerTitle }}
         </p>
-        <p v-if="headerDescription" class="truncate text-sm text-secondary-700 dark:text-secondary-300">
+        <p
+          v-if="headerDescription"
+          class="truncate text-sm text-secondary-700 dark:text-secondary-300"
+        >
           {{ headerDescription }}
         </p>
       </div>
-      
-      <div v-for="(section, sectionIndex) in sections" :key="sectionIndex" class="py-1">
-        <MenuItem v-for="item in section.items" :key="item.id" v-slot="{ active }">
+
+      <div
+        v-for="(section, sectionIndex) in sections"
+        :key="sectionIndex"
+        class="py-1"
+      >
+        <MenuItem
+          v-for="item in section.items"
+          :key="item.id"
+          v-slot="{ active }"
+        >
           <button
             @click="item.onClick"
             :class="[
               'group flex items-center w-full px-4 py-2 text-left text-sm',
-              active 
+              active
                 ? 'bg-secondary-100 text-secondary-900 dark:bg-secondary-700 dark:text-secondary-100'
-                : 'text-secondary-700 dark:text-secondary-300'
+                : 'text-secondary-700 dark:text-secondary-300',
             ]"
           >
             <Icon

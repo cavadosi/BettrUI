@@ -23,7 +23,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
             type="checkbox"
             aria-describedby={`${id}-description`}
             className={twMerge(
-              "col-start-1 row-start-1 appearance-none rounded-sm border border-secondary-300 bg-white checked:border-primary-600 checked:bg-primary-600 indeterminate:border-primary-600 indeterminate:bg-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 disabled:border-secondary-300 disabled:bg-secondary-100 disabled:checked:bg-secondary-100 forced-colors:appearance-auto",
+              "col-start-1 row-start-1 appearance-none rounded-sm border border-secondary-300 bg-background-light checked:border-primary-600 checked:bg-primary-600 indeterminate:border-primary-600 indeterminate:bg-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 disabled:border-secondary-300 disabled:bg-secondary-100 disabled:checked:bg-secondary-100 forced-colors:appearance-auto",
               "dark:border-secondary-600 dark:bg-secondary-700 dark:checked:border-primary-500 dark:checked:bg-primary-500 dark:focus-visible:outline-primary-500 dark:disabled:border-secondary-600 dark:disabled:bg-secondary-600 dark:disabled:checked:bg-secondary-600",
               className
             )}

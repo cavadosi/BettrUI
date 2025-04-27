@@ -37,9 +37,9 @@ const selected = computed({
         <div class="relative mt-2">
           <ListboxButton
             :class="twMerge(
-              'grid w-full cursor-default grid-cols-1 rounded-md bg-white py-1.5 pr-2 pl-3 text-left text-primary-900 outline-1 -outline-offset-1 outline-secondary-300',
+              'grid w-full cursor-default grid-cols-1 rounded-md bg-background-light py-1.5 pr-2 pl-3 text-left text-primary-900 outline-1 -outline-offset-1 outline-secondary-300',
               'focus:outline-2 focus:-outline-offset-2 focus:outline-primary-600 sm:text-sm/6',
-              'dark:bg-secondary-950 dark:text-secondary-100 dark:outline-secondary-700 dark:ring-1 dark:ring-black/40',
+              'dark:bg-background-dark dark:text-secondary-100 dark:outline-secondary-700 dark:ring-1 dark:ring-black/40',
               props.class,
             )"
           >
@@ -54,7 +54,7 @@ const selected = computed({
           </ListboxButton>
 
           <ListboxOptions
-            class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-hidden sm:text-sm dark:bg-secondary-950 dark:ring-gray-700"
+            class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-background-light py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-hidden sm:text-sm dark:bg-background-dark dark:ring-gray-700"
           >
             <ListboxOption
               v-for="item in items"

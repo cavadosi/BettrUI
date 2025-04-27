@@ -55,8 +55,8 @@ const onToggle = () => {
       <span class="sr-only">{{ label }}</span>
       <span
         aria-hidden="true"
-        class="pointer-events-none inline-block size-5 transform rounded-full bg-white ring-0 shadow-sm transition duration-200 ease-in-out"
-        :class="{ 'translate-x-5': modelValue, 'dark:bg-secondary-950': true }"
+        class="pointer-events-none inline-block size-5 transform rounded-full bg-background-light ring-0 shadow-sm transition duration-200 ease-in-out"
+        :class="{ 'translate-x-5': modelValue, 'dark:bg-background-dark': true }"
       >
         <span
           aria-hidden="true"

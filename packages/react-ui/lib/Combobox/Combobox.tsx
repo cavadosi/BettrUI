@@ -56,7 +56,7 @@ const Combobox: React.FC<ComboboxProps> = ({
       </Label>
       <div className="relative mt-2">
         <ComboboxInput
-          className="block w-full rounded-md bg-white py-1.5 pr-12 pl-3 text-base text-secondary-900 outline-1 -outline-offset-1 outline-secondary-300 placeholder:text-secondary-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-500 dark:bg-secondary-950 dark:text-secondary-100 dark:outline-secondary-800 dark:placeholder:text-secondary-500 sm:text-sm"
+          className="block w-full rounded-md bg-background-light py-1.5 pr-12 pl-3 text-base text-secondary-900 outline-1 -outline-offset-1 outline-secondary-300 placeholder:text-secondary-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-500 dark:bg-background-dark dark:text-secondary-100 dark:outline-secondary-800 dark:placeholder:text-secondary-500 sm:text-sm"
           onChange={(event) => setQuery(event.target.value)}
           onBlur={() => setQuery("")}
           displayValue={(item: Item | null) => item?.label || ""}
@@ -70,7 +70,7 @@ const Combobox: React.FC<ComboboxProps> = ({
         </ComboboxButton>
 
         {filteredItems.length > 0 && (
-          <ComboboxOptions className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base ring-1 shadow-lg ring-black/5 focus:outline-hidden sm:text-sm dark:bg-secondary-950 dark:ring-secondary-800">
+          <ComboboxOptions className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-background-light py-1 text-base ring-1 shadow-lg ring-black/5 focus:outline-hidden sm:text-sm dark:bg-background-dark dark:ring-secondary-800">
             {filteredItems.map((item) => (
               <ComboboxOption
                 key={item.id}

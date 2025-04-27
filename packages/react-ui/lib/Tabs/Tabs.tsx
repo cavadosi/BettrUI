@@ -30,7 +30,7 @@ const TabsList: React.FC<TabListProps> = ({
   return (
     <TabList
       className={twMerge(
-        "flex p-1.5 rounded-md bg-secondary-100 dark:bg-secondary-950",
+        "flex p-1.5 rounded-md bg-secondary-100 dark:bg-background-dark",
         className
       )}
       {...props}

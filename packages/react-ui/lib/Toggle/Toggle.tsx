@@ -40,8 +40,8 @@ const Toggle: React.FC<ToggleProps> = ({
         <span
           aria-hidden="true"
           className={twMerge(
-            "pointer-events-none inline-block size-5 transform rounded-full bg-white ring-0 shadow-sm transition duration-200 ease-in-out group-data-checked:translate-x-5",
-            "dark:bg-secondary-950 "
+            "pointer-events-none inline-block size-5 transform rounded-full bg-background-light ring-0 shadow-sm transition duration-200 ease-in-out group-data-checked:translate-x-5",
+            "dark:bg-background-dark "
           )}
         >
           <span

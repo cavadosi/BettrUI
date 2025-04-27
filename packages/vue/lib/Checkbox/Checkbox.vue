@@ -25,7 +25,7 @@ watch(() => props.modelValue, (newValue) => {
           type="checkbox"
           v-model="isChecked"
           aria-describedby="`${id}-description`"
-          class="col-start-1 row-start-1 appearance-none rounded-sm border border-secondary-300 bg-white checked:border-primary-600 checked:bg-primary-600 indeterminate:border-primary-600 indeterminate:bg-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 disabled:border-secondary-300 disabled:bg-secondary-100 disabled:checked:bg-secondary-100"
+          class="col-start-1 row-start-1 appearance-none rounded-sm border border-secondary-300 bg-background-light checked:border-primary-600 checked:bg-primary-600 indeterminate:border-primary-600 indeterminate:bg-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 disabled:border-secondary-300 disabled:bg-secondary-100 disabled:checked:bg-secondary-100"
         />
         <svg
           fill="none"

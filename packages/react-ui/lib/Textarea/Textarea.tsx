@@ -44,7 +44,7 @@ const Textarea: React.FC<TextareaProps> = ({
           value={value}
           onChange={onChange}
           className={twMerge(
-            "block w-full rounded-md bg-white px-3 py-1.5 text-base text-secondary-900 outline-1 outline-secondary-300 disabled:bg-secondary-100 disabled:dark:bg-secondary-950 placeholder:text-secondary-400 dark:text-secondary-100 dark:bg-transparent dark:outline-secondary-600 dark:placeholder:text-secondary-500 focus:outline-2 focus:outline-primary-600 focus:-outline-offset-2 sm:text-sm/6 disabled:cursor-not-allowed",
+            "block w-full rounded-md bg-background-light px-3 py-1.5 text-base text-secondary-900 outline-1 outline-secondary-300 disabled:bg-secondary-100 disabled:dark:bg-background-dark placeholder:text-secondary-400 dark:text-secondary-100 dark:bg-transparent dark:outline-secondary-600 dark:placeholder:text-secondary-500 focus:outline-2 focus:outline-primary-600 focus:-outline-offset-2 sm:text-sm/6 disabled:cursor-not-allowed",
             className,
           )}
           {...props}

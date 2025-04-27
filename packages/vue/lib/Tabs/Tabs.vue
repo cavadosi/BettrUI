@@ -2,7 +2,7 @@
   <TabGroup>
     <div class="space-y-4">
       <TabList
-        class="flex p-1.5 rounded-md bg-secondary-100 dark:bg-secondary-950"
+        class="flex p-1.5 rounded-md bg-secondary-100 dark:bg-background-dark"
       >
         <Tab
           v-for="item in items"

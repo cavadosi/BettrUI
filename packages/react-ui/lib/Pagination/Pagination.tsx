@@ -75,7 +75,7 @@ const PrevButton: React.FC<PrevNextProps> = ({
     onClick={() => onPageChange(currentPage - 1)}
     disabled={currentPage === 1}
     className={twMerge(
-      "relative inline-flex items-center rounded-l-md px-2 py-2 text-secondary-400 ring-1 ring-secondary-300 ring-inset hover:bg-secondary-50  focus:z-20 focus:outline-offset-0 dark:text-secondary-300 dark:ring-secondary-500 dark:hover:bg-secondary-950/50 cursor-pointer",
+      "relative inline-flex items-center rounded-l-md px-2 py-2 text-secondary-400 ring-1 ring-secondary-300 ring-inset hover:bg-secondary-50  focus:z-20 focus:outline-offset-0 dark:text-secondary-300 dark:ring-secondary-500 dark:hover:bg-background-dark/50 cursor-pointer",
       className
     )}
   >
@@ -94,7 +94,7 @@ const NextButton: React.FC<PrevNextProps & { totalPages: number }> = ({
     onClick={() => onPageChange(currentPage + 1)}
     disabled={currentPage === totalPages}
     className={twMerge(
-      "relative inline-flex items-center rounded-r-md px-2 py-2 text-secondary-400 ring-1 ring-secondary-300 ring-inset hover:bg-secondary-50 focus:z-20 focus:outline-offset-0 dark:text-secondary-300 dark:ring-secondary-500 dark:hover:bg-secondary-950/50 cursor-pointer",
+      "relative inline-flex items-center rounded-r-md px-2 py-2 text-secondary-400 ring-1 ring-secondary-300 ring-inset hover:bg-secondary-50 focus:z-20 focus:outline-offset-0 dark:text-secondary-300 dark:ring-secondary-500 dark:hover:bg-background-dark/50 cursor-pointer",
       className
     )}
   >
@@ -122,7 +122,7 @@ const PageButton: React.FC<PageButtonProps> = ({
       "relative inline-flex items-center px-4 py-2 text-sm font-semibold focus:z-20 focus:outline-offset-0 cursor-pointer",
       page === currentPage
         ? "z-10 bg-primary-600 text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-500"
-        : "text-secondary-900 ring-1 ring-secondary-300 ring-inset hover:bg-secondary-50 dark:text-secondary-300 dark:ring-secondary-500 dark:hover:bg-secondary-950/50",
+        : "text-secondary-900 ring-1 ring-secondary-300 ring-inset hover:bg-secondary-50 dark:text-secondary-300 dark:ring-secondary-500 dark:hover:bg-background-dark/50",
       className
     )}
   >

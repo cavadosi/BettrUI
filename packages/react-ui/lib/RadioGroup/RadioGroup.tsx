@@ -58,7 +58,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
                 checked={item.value === value}
                 onChange={handleChange}
                 className={twMerge(
-                  "relative size-4 appearance-none rounded-full border border-secondary-300 bg-white before:absolute before:inset-1 before:rounded-full before:bg-white not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-secondary-300 disabled:bg-secondary-100 disabled:before:bg-secondary-400 dark:border-secondary-600 dark:bg-secondary-700 dark:checked:border-indigo-700 dark:checked:bg-indigo-700 dark:focus-visible:outline-indigo-400"
+                  "relative size-4 appearance-none rounded-full border border-secondary-300 bg-background-light before:absolute before:inset-1 before:rounded-full before:bg-background-light not-checked:before:hidden checked:border-indigo-600 checked:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-secondary-300 disabled:bg-secondary-100 disabled:before:bg-secondary-400 dark:border-secondary-600 dark:bg-secondary-700 dark:checked:border-indigo-700 dark:checked:bg-indigo-700 dark:focus-visible:outline-indigo-400"
                 )}
                 {...props}
               />

@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 // Variants for the Card component
 const CardVariants = cva(
-  "divide-y divide-secondary-200 overflow-hidden rounded-lg bg-secondary-50 shadow-sm",
+  "divide-y divide-secondary-200 overflow-hidden rounded-lg bg-background-light dark:bg-background-dark dark:text-white dark:divide-secondary-950 shadow-sm",
   {
     variants: {
       rounded: {

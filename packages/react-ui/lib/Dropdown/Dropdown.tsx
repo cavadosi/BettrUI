@@ -97,7 +97,7 @@ const Dropdown: React.FC<DropdownProps> = ({
         style={styles.popper}
         {...attributes.popper}
         transition
-        className="z-10 mt-2 w-56 origin-top-right divide-y divide-secondary-100 dark:divide-secondary-700 rounded-md bg-white dark:bg-secondary-950 ring-1 shadow-lg ring-secondary-950/5 dark:ring-secondary-50/20 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+        className="z-10 mt-2 w-56 origin-top-right divide-y divide-secondary-100 dark:divide-secondary-700 rounded-md bg-background-light dark:bg-background-dark ring-1 shadow-lg ring-secondary-950/5 dark:ring-secondary-50/20 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
       >
         {headerTitle && (
           <div className="px-4 py-3">

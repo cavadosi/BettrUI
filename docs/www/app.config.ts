@@ -7,7 +7,7 @@ export default defineAppConfig({
     },
 
     theme: {
-      customizable: true,
+      customizable: false,
       color: "zinc",
       radius: 0.5,
     },

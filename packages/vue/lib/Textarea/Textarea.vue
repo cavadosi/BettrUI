@@ -3,11 +3,11 @@ import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
 const TextareaVariants = cva(
-  "block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 disabled:bg-gray-100 dark:text-gray-100 dark:bg-transparent dark:outline-gray-600 dark:placeholder-gray-500 focus:outline-2 focus:outline-primary-600 focus:-outline-offset-2 sm:text-sm disabled:cursor-not-allowed",
+  "block w-full rounded-md bg-background-light px-3 py-1.5 text-base text-gray-900 outline-1 outline-gray-300 disabled:bg-gray-100 dark:text-gray-100 dark:bg-transparent dark:outline-gray-600 dark:placeholder-gray-500 focus:outline-2 focus:outline-primary-600 focus:-outline-offset-2 sm:text-sm disabled:cursor-not-allowed",
   {
     variants: {
       disabled: {
-        true: "disabled:bg-secondary-100 disabled:dark:bg-secondary-950 cursor-not-allowed",
+        true: "disabled:bg-secondary-100 disabled:dark:bg-background-dark cursor-not-allowed",
         false: "focus:outline-2 focus:outline-primary-600 focus:-outline-offset-2",
       },
     },

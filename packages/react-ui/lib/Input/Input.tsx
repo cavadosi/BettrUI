@@ -40,11 +40,11 @@ const Input: React.FC<InputProps> = ({
             aria-describedby={`${id}-description`}
             aria-invalid={error ? "true" : "false"}
             className={twMerge(
-              "col-start-1 row-start-1 block w-full rounded-md bg-white px-3 py-1.5 text-base text-secondary-900 outline-1 -outline-offset-1 dark:bg-transparent dark:text-secondary-200 dark:outline-secondary-700",
+              "col-start-1 row-start-1 block w-full rounded-md bg-background-light px-3 py-1.5 text-base text-secondary-900 outline-1 -outline-offset-1 dark:bg-transparent dark:text-secondary-200 dark:outline-secondary-700",
               error
                 ? "outline-red-300 placeholder:text-red-300 focus:outline-red-600 dark:outline-red-600 dark:placeholder:text-red-400"
                 : "outline-secondary-300 placeholder:text-secondary-400 focus:outline-primary-600 dark:outline-secondary-500 dark:placeholder:text-secondary-500 dark:focus:outline-primary-400",
-              " focus:outline-2 focus:-outline-offset-2 disabled:cursor-not-allowed disabled:bg-secondary-50 disabled:text-secondary-500 disabled:outline-secondary-200 dark:disabled:bg-secondary-950 dark:disabled:text-secondary-400 sm:text-sm",
+              " focus:outline-2 focus:-outline-offset-2 disabled:cursor-not-allowed disabled:bg-secondary-50 disabled:text-secondary-500 disabled:outline-secondary-200 dark:disabled:bg-background-dark dark:disabled:text-secondary-400 sm:text-sm",
               leadingIcon ? "pl-10" : "",
               className
             )}

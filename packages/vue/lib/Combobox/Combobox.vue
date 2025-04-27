@@ -60,7 +60,7 @@ function handleChange(item: Item | null) {
     </label>
     <div class="relative mt-2">
       <ComboboxInput
-        class="block w-full rounded-md bg-white py-1.5 pr-12 pl-3 text-base text-secondary-900 outline-1 -outline-offset-1 outline-secondary-300 placeholder:text-secondary-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-500 dark:bg-secondary-950 dark:text-secondary-100 dark:outline-secondary-800 dark:placeholder:text-secondary-500 sm:text-sm"
+        class="block w-full rounded-md bg-background-light py-1.5 pr-12 pl-3 text-base text-secondary-900 outline-1 -outline-offset-1 outline-secondary-300 placeholder:text-secondary-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-500 dark:bg-background-dark dark:text-secondary-100 dark:outline-secondary-800 dark:placeholder:text-secondary-500 sm:text-sm"
         :display-value="(item) => (item as Item)?.label || ''"
         @change="query = $event.target.value"
         @blur="query = ''"
@@ -75,7 +75,7 @@ function handleChange(item: Item | null) {
 
       <ComboboxOptions
         v-if="filteredItems.length > 0"
-        class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base ring-1 shadow-lg ring-black/5 focus:outline-hidden sm:text-sm dark:bg-secondary-950 dark:ring-secondary-800"
+        class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-background-light py-1 text-base ring-1 shadow-lg ring-black/5 focus:outline-hidden sm:text-sm dark:bg-background-dark dark:ring-secondary-800"
       >
         <ComboboxOption
           v-for="item in filteredItems"

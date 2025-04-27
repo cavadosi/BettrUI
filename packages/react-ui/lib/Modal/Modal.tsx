@@ -28,12 +28,12 @@ const Modal: React.FC<ModalProps> & {
       className={twMerge("relative z-10", className)}
       {...props}
     >
-      <DialogBackdrop className="fixed inset-0 bg-secondary-700/75 transition-opacity dark:bg-secondary-950/75" />
+      <DialogBackdrop className="fixed inset-0 bg-secondary-700/75 transition-opacity dark:bg-background-dark/75" />
       <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4 text-center">
           <DialogPanel
             className={twMerge(
-              "fixed bg-white divide-y divide-secondary-200 flex flex-col focus:outline-none sm:my-8 sm:w-full sm:max-w-lg dark:bg-secondary-900 dark:divide-secondary-700",
+              "fixed bg-background-light divide-y divide-secondary-200 flex flex-col focus:outline-none sm:my-8 sm:w-full sm:max-w-lg dark:bg-background-dark dark:divide-secondary-700",
               className
             )}
           >

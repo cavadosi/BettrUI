@@ -35,7 +35,6 @@ const meta: Meta<typeof Dropdown> = {
       },
     },
     offset: { control: 'number' },
-    className: { control: 'text' },
   },
 }
 
@@ -148,7 +147,7 @@ export const WithOffset: Story = {
     ],
     placement: 'right-start',
     offset: 10,
-    className: 'px-20 pt-10',
+    class: 'px-20 pt-10',
     buttonVariant: 'soft',
     buttonSize: 'xs',
     buttonRounded: 'none',

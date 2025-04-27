@@ -16,7 +16,7 @@ const ButtonVariants = cva(
         ghost:
           "text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-950",
         secondary:
-          "bg-white ring-secondary-300 ring-inset hover:bg-secondary-50 text-secondary-900 ring-1 text-xs font-semibold shadow-xs dark:ring-0 dark:text-white dark:bg-white/10  dark:hover:bg-white/20",
+          "bg-background-light ring-secondary-300 ring-inset hover:bg-secondary-50 text-secondary-900 ring-1 text-xs font-semibold shadow-xs dark:ring-0 dark:text-white dark:bg-background-light/10  dark:hover:bg-background-light/20",
       },
       size: {
         xs: "px-2 py-1 text-xs",
