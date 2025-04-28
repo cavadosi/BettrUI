@@ -7,7 +7,7 @@ import {
   ComboboxOptions,
 } from "@headlessui/vue";
 import { ref, computed, watch } from "vue";
-import Icon from "../Icon/Icon.vue"; // Asegurate de que esta ruta sea correcta
+import Icon from "../Icon/Icon.vue";
 
 interface Item {
   id: number;
@@ -18,6 +18,7 @@ const props = defineProps<{
   items: Item[];
   label: string;
   icon?: string;
+  placeholder?: string;
   selectedIcon?: string;
   selectedItem: Item | null;
 }>();
@@ -60,10 +61,11 @@ function handleChange(item: Item | null) {
     </label>
     <div class="relative mt-2">
       <ComboboxInput
-        class="block w-full rounded-md bg-background-light py-1.5 pr-12 pl-3 text-base text-secondary-900 outline-1 -outline-offset-1 outline-secondary-300 placeholder:text-secondary-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-500 dark:bg-background-dark dark:text-secondary-100 dark:outline-secondary-800 dark:placeholder:text-secondary-500 sm:text-sm"
+        class="block w-full rounded-md bg-background-light py-1.5 pr-12 pl-3 text-base text-secondary-900 outline-1 -outline-offset-1 outline-secondary-300 placeholder:text-secondary-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-500 dark:bg-background-dark dark:text-secondary-100 dark:outline-secondary-500 dark:placeholder:text-secondary-500 sm:text-sm"
         :display-value="(item) => (item as Item)?.label || ''"
         @change="query = $event.target.value"
         @blur="query = ''"
+        :placeholder="placeholder"
       />
       <ComboboxButton class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-hidden">
         <Icon

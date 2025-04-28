@@ -8,14 +8,14 @@ navigation: false
 announcement:
   title: 'Release v0.8.21'
   icon: '🎉'
-  to: https://github.com/ZTL-UwU/shadcn-docs-nuxt/releases/latest
+  to: https://github.com/cavadosi/BettrUI/releases/latest
   target: _blank
 actions:
   - name: Documentation
-    to: https://shadcn-docs-nuxt.vercel.app/getting-started/introduction
+    to: https://better-ui-docs-beta.vercel.app/introduction
   - name: GitHub
     variant: outline
-    to: https://github.com/ZTL-UwU/shadcn-docs-nuxt
+    to: https://github.com/cavadosi/BettrUI
     leftIcon: 'lucide:github'
 ---
 
@@ -24,13 +24,5 @@ Welcome to BettrUI
 
 
 #description
-Beautifully designed Nuxt Content template built with shadcn-vue. :br Customizable. Compatible. Open Source.
-::
-
-::BtrButton{variant="soft"}
-  A default button
-::
-
-::div{class="border rounded-lg shadow-md"}
-  :iframe{src="https://shadcn-docs-nuxt.vercel.app/getting-started/introduction" height="700" width="100%" class="rounded-lg" scrolling="no" frameborder="0"}
+A modern UI component library for React and Vue — built with Tailwind CSS v4+. :br  Customizable. Fast. Open Source.
 ::

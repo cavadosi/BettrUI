@@ -53,7 +53,7 @@ watch(() => props.modelValue, (newValue) => {
       <label :for="id" class="font-medium text-secondary-900 dark:text-secondary-100">
         {{ label }}
       </label>
-      <p :id="`${id}-description`" class="text-secondary-500 dark:text-secondary-400">
+      <p :id="`${id}-description`" class="text-secondary-400 dark:text-secondary-200">
         {{ description }}
       </p>
     </div>

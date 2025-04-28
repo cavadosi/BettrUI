@@ -7,7 +7,6 @@ const meta: Meta<typeof Modal> = {
   title: 'Vue/Modal',
   component: Modal,
   argTypes: {
-    className: { control: 'text' },
     title: { control: 'text' }
   }
 }
@@ -19,7 +18,7 @@ type Story = StoryObj<typeof Modal>
 export const Default: Story = {
   args: {
     isOpen: false,
-    className: 'rounded-md',
+    class: 'rounded-md',
     title: 'Example Modal'
   },
   render: (args) => ({

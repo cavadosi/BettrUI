@@ -49,14 +49,14 @@ const listClass = computed(() => breadcrumbVariants({ size: props.size }));
           v-if="index > 0"
           :name="icon || 'ChevronRight'"
           aria-hidden="true"
-          class="h-5 w-5 shrink-0 text-secondary-400"
+          class="h-5 w-5 shrink-0 text-secondary-400 dark:text-secondary-200"
         />
 
         <slot name="link" :page="page">
           <a
             :href="page.href"
             :aria-current="page.current ? 'page' : undefined"
-            class="ml-4 font-medium flex gap-2 items-center justify-center text-secondary-500 hover:text-secondary-700 dark:text-secondary-400 dark:hover:text-secondary-50"
+            class="ml-4 font-medium flex gap-2 items-center justify-center text-secondary-400 hover:text-secondary-500 dark:text-secondary-100 dark:hover:text-secondary-50"
           >
             <Icon
               v-if="page.icon"

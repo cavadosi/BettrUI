@@ -3,7 +3,7 @@ export default defineAppConfig({
     site: {
       name: "BettrUI",
       description:
-        "A modern, framework-agnostic UI component library for React and Vue — built with Tailwind CSS v4+. Customizable. Fast. Open Source.",
+        "A modern UI component library for React and Vue — built with Tailwind CSS v4+. Customizable. Fast. Open Source.",
     },
 
     theme: {
@@ -55,7 +55,7 @@ export default defineAppConfig({
               icon: "solar:palette-line-duotone",
               title: "Theming",
               description:
-                "Quickly set up the library and start building with our components.",
+                "Learn more about BettrUI’s theme system",
               to: "/theming",
               target: "_self",
               showLinkIcon: true,

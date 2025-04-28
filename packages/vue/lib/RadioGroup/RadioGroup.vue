@@ -31,15 +31,15 @@ const baseInput = cva(
 <template>
   <fieldset
     :aria-label="label"
-    :class="twMerge(props.class, 'dark:text-gray-100 dark:border-secondary-600')"
+    :class="twMerge(props.class, 'dark:text-secondary-100 dark:border-secondary-600')"
   >
     <legend
       v-if="label"
-      class="text-sm/6 font-semibold text-gray-900 dark:text-gray-100"
+      class="text-sm/6 font-semibold text-secondary-900 dark:text-secondary-50"
     >
       {{ label }}
     </legend>
-    <p v-if="description" class="mt-1 text-sm/6 text-gray-600 dark:text-gray-400">
+    <p v-if="description" class="mt-1 text-sm/6 text-secondary-600 dark:text-secondary-200">
       {{ description }}
     </p>
     <div :class="twMerge('space-y-5', (label || description) ? 'mt-6' : '')">
@@ -63,13 +63,13 @@ const baseInput = cva(
         <div class="ml-3 text-sm/6">
           <label
             :for="item.id"
-            class="font-medium text-secondary-900 dark:text-gray-100"
+            class="font-medium text-secondary-900 dark:text-secondary-100"
           >
             {{ item.label }}
           </label>
           <p
             :id="`${item.id}-description`"
-            class="text-secondary-500 dark:text-secondary-400"
+            class="text-secondary-500 dark:text-secondary-300"
           >
             {{ item.description }}
           </p>

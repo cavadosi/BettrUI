@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 
 const DividerVariants = cva(
-"border-secondary-100 dark:border-secondary-900 w-full",
+"border-secondary-200 dark:border-secondary-500 w-full",
 {
     variants: {
     size: {

@@ -19,7 +19,7 @@ const emit = defineEmits(["update:modelValue"]);
 const attrs = useAttrs();
 
 const baseClasses = cva(
-  "group relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-secondary-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 focus:outline-hidden data-[checked=true]:bg-primary-600 dark:bg-secondary-600 dark:data-[checked=true]:bg-primary-500 dark:focus:ring-primary-400 dark:focus:ring-offset-secondary-900",
+  "group relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-secondary-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 focus:outline-hidden data-[checked=true]:bg-primary-600 dark:bg-secondary-400 dark:data-[checked=true]:bg-primary-500 dark:focus:ring-primary-400 dark:focus:ring-offset-secondary-900",
   {
     variants: {
       disabled: {
@@ -100,7 +100,7 @@ const onToggle = () => {
       </span>
       <span
         v-if="description"
-        class="text-secondary-500 dark:text-secondary-400"
+        class="text-secondary-500 dark:text-secondary-300"
       >
         {{ description }}
       </span>

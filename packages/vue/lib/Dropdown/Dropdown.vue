@@ -119,7 +119,7 @@ watch(
           <Icon
             :name="icon"
             aria-hidden="true"
-            class="-mr-1 size-5 text-secondary-400 dark:text-secondary-50/40"
+            class="-mr-1 size-5 text-secondary-200 dark:text-secondary-50/40"
           />
         </Button>
       </MenuButton>

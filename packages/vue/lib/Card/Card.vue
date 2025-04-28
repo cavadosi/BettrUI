@@ -3,7 +3,7 @@ import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
 const cardVariants = cva(
-  "divide-y divide-secondary-200 overflow-hidden rounded-lg bg-background-light dark:bg-background-dark dark:text-white dark:divide-secondary-950 shadow-sm",
+  "divide-y divide-secondary-100 overflow-hidden rounded-lg bg-background-light dark:bg-background-dark dark:text-white dark:divide-secondary-950 shadow-sm border-secondary-100 dark:border-secondary-900",
   {
     variants: {
       rounded: {

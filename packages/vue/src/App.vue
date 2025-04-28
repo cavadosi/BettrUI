@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import Badge from '../lib/Badge/Badge.vue';
+
 </script>
 
 <template>
-    <Button text="Run the Tests" />
+    <Badge variant="primary" >Test</Badge>
+
 </template>

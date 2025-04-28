@@ -12,7 +12,7 @@ const ButtonVariants = cva(
         link: "text-primary-600 underline-offset-4 hover:underline dark:text-primary-400",
         outline:
           "border border-primary-600 text-primary-600 hover:bg-primary-100 dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-300/20",
-        soft: "bg-primary-50 text-primary-400 hover:bg-primary-100 dark:bg-primary-950 dark:hover:bg-primary-900",
+        soft: "bg-primary-100/50 text-primary-400 hover:bg-primary-100 dark:bg-primary-900/50 dark:hover:bg-primary-900",
         ghost:
           "text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-950",
         secondary:
