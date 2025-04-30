@@ -85,6 +85,13 @@ export default defineAppConfig({
             },
           ],
         },
+        {
+          title: "About",
+          to: "/about",
+          target: "_self",
+          icon: "fluent:people-team-16-filled",
+          showLinkIcon: true,
+        }
       ],
     },
     aside: {
