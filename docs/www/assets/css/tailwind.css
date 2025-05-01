@@ -102,4 +102,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .shiki .line.highlight {
+    background-color: hsl(var(--muted));
+  }
 }
