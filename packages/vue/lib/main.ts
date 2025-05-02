@@ -3,6 +3,7 @@ import "./tailwind.css";
 import Accordion from "./Accordion/Accordion.vue";
 import Avatar from "./Avatar/Avatar.vue";
 import Badge from "./Badge/Badge.vue";
+import Breadcrumb from "./Breadcrumb/Breadcrumb.vue";
 import Button from "./Button/Button.vue";
 import Card from "./Card/Card.vue";
 import Checkbox from "./Checkbox/Checkbox.vue";
@@ -15,6 +16,7 @@ import Input from "./Input/Input.vue";
 import Modal from "./Modal/Modal.vue";
 import Pagination from "./Pagination/Pagination.vue";
 import RadioGroup from "./RadioGroup/RadioGroup.vue";
+import Select from "./Select/Select.vue";
 import Skeleton from "./Skeleton/Skeleton.vue";
 import Tabs from "./Tabs/Tabs.vue";
 import Textarea from "./Textarea/Textarea.vue";
@@ -24,6 +26,7 @@ export {
   Accordion,
   Avatar,
   Badge,
+  Breadcrumb,
   Button,
   Card,
   Checkbox,
@@ -36,6 +39,7 @@ export {
   Modal,
   Pagination,
   RadioGroup,
+  Select,
   Skeleton,
   Tabs,
   Textarea,
