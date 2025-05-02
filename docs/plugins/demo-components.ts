@@ -3,10 +3,12 @@ import PaginationDemo from '~/components/demo/PaginationDemo.vue';
 import TabsDemo from '~/components/demo/TabsDemo.vue';
 import ThemeGeneratorModal from '~/components/ThemeGeneratorModal.vue';
 import AccordionDemo from '../components/demo/AccordionDemo.vue';
+import DropdownDemo from '../components/demo/DropdownDemo.vue';
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('DemoAccordion', AccordionDemo);
   nuxtApp.vueApp.component('DemoCard', CardDemo);
+  nuxtApp.vueApp.component('DemoDropdown', DropdownDemo);
   nuxtApp.vueApp.component('DemoPagination', PaginationDemo);
   nuxtApp.vueApp.component('DemoTabs', TabsDemo);
   nuxtApp.vueApp.component('ThemeGenerator', ThemeGeneratorModal);
