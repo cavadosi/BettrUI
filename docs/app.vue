@@ -38,8 +38,21 @@ useSeoMeta({
 
 useServerHead({
   bodyAttrs: {
-    class: themeClass.value,
+    class: `${themeClass.value} overflow-y-auto scrollbar`,
     style: `--radius: ${radius.value}rem;`,
   },
 });
 </script>
+
+<style>
+.scrollbar::-webkit-scrollbar {
+height: 4px;
+width: 4px;
+background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+border-radius: 50px;
+background: hsl(var(--primary));
+}
+</style>
