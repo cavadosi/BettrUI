@@ -4,6 +4,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('BtrAccordion', BettrUI.Accordion);
   nuxtApp.vueApp.component('BtrAvatar', BettrUI.Avatar);
   nuxtApp.vueApp.component('BtrBadge', BettrUI.Badge);
+  nuxtApp.vueApp.component('BtrBreadcrumb', BettrUI.Breadcrumb);
   nuxtApp.vueApp.component('BtrButton', BettrUI.Button);
   nuxtApp.vueApp.component('BtrCard', BettrUI.Card);
   nuxtApp.vueApp.component('BtrCheckbox', BettrUI.Checkbox);
