@@ -11,12 +11,20 @@ export default defineAppConfig({
       color: "zinc",
       radius: 0.5,
     },
+    banner: {
+      enable: true,
+      showClose: false,
+      content: '🎉 Introducing BettrUI — one library, every framework. Star us on **GitHub**!',
+      to: 'https://github.com/cavadosi/BettrUI',
+      target: '_blank',
+      border: true,
+    },
     header: {
       title: "BettrUI",
       showTitle: true,
       darkModeToggle: true,
       languageSwitcher: {
-        enabled: false
+        enable: false
       },
       logo: {
         light: "/logo.png",

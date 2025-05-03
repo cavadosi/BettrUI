@@ -6,7 +6,7 @@ navigation: false
 ::hero
 ---
 announcement:
-  title: 'Release v0.8.21'
+  title: 'Release v1.0.0'
   icon: '🎉'
   to: https://github.com/cavadosi/BettrUI/releases/latest
   target: _blank
