@@ -7,6 +7,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('BtrButton', BettrUI.Button);
   nuxtApp.vueApp.component('BtrCard', BettrUI.Card);
   nuxtApp.vueApp.component('BtrCheckbox', BettrUI.Checkbox);
+  nuxtApp.vueApp.component('BtrCombobox', BettrUI.Combobox);
   nuxtApp.vueApp.component('BtrContainer', BettrUI.Container);
   nuxtApp.vueApp.component('BtrDivider', BettrUI.Divider);
   nuxtApp.vueApp.component('BtrDropdown', BettrUI.Dropdown);

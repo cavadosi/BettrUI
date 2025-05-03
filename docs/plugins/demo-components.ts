@@ -1,4 +1,5 @@
 import CardDemo from '~/components/demo/CardDemo.vue';
+import ComboboxDemo from '~/components/demo/ComboboxDemo.vue';
 import PaginationDemo from '~/components/demo/PaginationDemo.vue';
 import SelectDemo from '~/components/demo/SelectDemo.vue';
 import TabsDemo from '~/components/demo/TabsDemo.vue';
@@ -9,6 +10,7 @@ import DropdownDemo from '../components/demo/DropdownDemo.vue';
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('DemoAccordion', AccordionDemo);
   nuxtApp.vueApp.component('DemoCard', CardDemo);
+  nuxtApp.vueApp.component('DemoCombobox', ComboboxDemo);
   nuxtApp.vueApp.component('DemoDropdown', DropdownDemo);
   nuxtApp.vueApp.component('DemoPagination', PaginationDemo);
   nuxtApp.vueApp.component('DemoSelect', SelectDemo);
