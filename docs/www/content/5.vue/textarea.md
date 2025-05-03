@@ -2,7 +2,7 @@
 badges:
   - value: Source
     icon: lucide:code
-    to: https://github.com/cavadosi/BettrUI/blob/main/packages/vue-ui/components/Textarea.vue
+    to: https://github.com/cavadosi/BettrUI/blob/main/packages/vue/lib/Textarea/Textarea.vue
     target: _blank
 ---
 
