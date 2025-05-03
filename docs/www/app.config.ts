@@ -13,7 +13,7 @@ export default defineAppConfig({
     },
     banner: {
       enable: true,
-      showClose: false,
+      showClose: true,
       content: '🎉 Introducing BettrUI — one library, every framework. Star us on **GitHub**!',
       to: 'https://github.com/cavadosi/BettrUI',
       target: '_blank',
