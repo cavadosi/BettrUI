@@ -3,6 +3,7 @@ import { resolve } from "path";
 import vue from "@vitejs/plugin-vue";
 import tsconfigPaths from "vite-tsconfig-paths";
 import dts from "vite-plugin-dts";
+import commonjs from '@rollup/plugin-commonjs';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,6 +20,9 @@ export default defineConfig({
       // make sure to externalize deps that shouldn't be bundled
       // into your library
       external: ["vue"],
+      plugins: [
+        commonjs(), // ← convert CJS → ESM
+      ],
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
