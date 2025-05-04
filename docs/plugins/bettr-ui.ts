@@ -16,6 +16,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('BtrInput', BettrUI.Input);
   nuxtApp.vueApp.component('BtrModal', BettrUI.Modal);
   nuxtApp.vueApp.component('BtrPagination', BettrUI.Pagination);
+  nuxtApp.vueApp.component('BtrRadioGroup', BettrUI.RadioGroup);
   nuxtApp.vueApp.component('BtrSelect', BettrUI.Select);
   nuxtApp.vueApp.component('BtrSkeleton', BettrUI.Skeleton);
   nuxtApp.vueApp.component('BtrTabs', BettrUI.Tabs);
