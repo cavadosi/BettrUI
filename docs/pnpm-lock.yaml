@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@bettr-ui/vue':
-        specifier: ^0.2.0
-        version: 0.2.0(@heroicons/vue@2.2.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
+        specifier: ^0.2.1
+        version: 0.2.1(@heroicons/vue@2.2.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
       '@heroicons/vue':
         specifier: ^2.2.0
         version: 2.2.0(vue@3.5.13(typescript@5.8.3))
@@ -325,8 +325,8 @@ packages:
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
 
-  '@bettr-ui/vue@0.2.0':
-    resolution: {integrity: sha512-LReXTpaY+lNxs/pk9KT+9+zZANpGnCQVVHNLlUZBROaeARqTqtZYj+DUTu0MEdwN5qwbToFtH3E/87IF5EvnvQ==}
+  '@bettr-ui/vue@0.2.1':
+    resolution: {integrity: sha512-DQjN89RcwHtKNVY2RHzCIPE+isRko0GsLBLuJOYS/HNY/c+K1mc4LDZmR80xaj++WbjamAudVjfL1dSGxXo64g==}
     peerDependencies:
       '@heroicons/vue': ^2.2.0
       vue: ^3.5.13
@@ -6832,7 +6832,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@bettr-ui/vue@0.2.0(@heroicons/vue@2.2.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))':
+  '@bettr-ui/vue@0.2.1(@heroicons/vue@2.2.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))':
     dependencies:
       '@headlessui/vue': 1.7.23(vue@3.5.13(typescript@5.8.3))
       '@heroicons/vue': 2.2.0(vue@3.5.13(typescript@5.8.3))
